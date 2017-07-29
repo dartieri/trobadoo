@@ -1,0 +1,57 @@
+﻿@model trobadoo.com.web.Models.Concept.ConceptModel
+<div id="contSuperior" class="contSuperiorConcepto">
+    <div class="container clearfix">
+        <!-- Iconos -->
+        <div class="iconosConcepto mv-25">
+            <div class="row row-narrow">
+                <div class="col-xs-4 col-sm-4 col-md-3 col-md-offset-1 text-center">
+                    <span class="fa-stack fa-7x rojo"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-check fa-stack-1x fa-inverse">
+                    </i></span><span class="tituloDestacado x2 visible mt-2">@Model.GetTranslation("1") </span>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 text-center">
+                    <span class="fa-stack fa-7x rojo"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-thumbs-up fa-stack-1x fa-inverse">
+                    </i></span><span class="tituloDestacado x2 visible mt-2">@Model.GetTranslation("2") </span>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-3 text-center">
+                    <span class="fa-stack fa-7x rojo"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-euro fa-stack-1x fa-inverse">
+                    </i></span><span class="tituloDestacado x2 visible mt-2">@Model.GetTranslation("3") </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contCentral" class="contCentralConcepto">
+    <div class="container clearfix">
+        <div class="textosConcepto ph-25 pt-40">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <span class="tituloDestacado gris visible mb-7">@Model.GetTranslation("4") </span><span class="txtMedio">
+                        @Model.GetTranslation("5") </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <span class="tituloDestacado gris visible mb-7">@Model.GetTranslation("6") </span><span class="txtMedio">
+                        @Model.GetTranslation("7")!
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <span class="tituloDestacado gris visible mb-7">@Model.GetTranslation("8") </span><span class="txtMedio">
+                        @Model.GetTranslation("9")
+                        <ul>
+                            <li>@Model.GetTranslation("10")</li>
+                            <li>@Model.GetTranslation("11")</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <span class="tituloDestacado gris visible mb-7">@Model.GetTranslation("12") </span><span class="txtMedio">
+                        @Model.GetTranslation("13")
+                        <ul>
+                            <li>@Model.GetTranslation("14")</li>
+                            <li>@Model.GetTranslation("15")</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

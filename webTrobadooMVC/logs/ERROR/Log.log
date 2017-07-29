@@ -1,0 +1,88 @@
+[2017-01-28 19:59:48,106]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:114-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.IO.IOException: No se puede escribir datos de en la conexión de transporte: net_io_connectionclosed.
+   en System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   en System.Net.Mail.CheckCommand.Send(SmtpConnection conn, String& response)
+   en System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   en System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 109
+[2017-01-28 20:14:33,668]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.IO.IOException: No se puede escribir datos de en la conexión de transporte: net_io_connectionclosed.
+   en System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   en System.Net.Mail.CheckCommand.Send(SmtpConnection conn, String& response)
+   en System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   en System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112
+[2017-01-28 20:16:35,579]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.IO.IOException: No se puede escribir datos de en la conexión de transporte: net_io_connectionclosed.
+   en System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   en System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   en System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpClient.GetConnection()
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112
+[2017-01-28 20:18:55,242]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.Net.WebException: No se puede resolver el nombre remoto: 'relay-hosting.secureserver.net'
+   en System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   en System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   en System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   en System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   en System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpClient.GetConnection()
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112
+[2017-01-28 20:20:20,086]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.Net.WebException: No se puede resolver el nombre remoto: 'relay-hosting.secureserver.net'
+   en System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   en System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   en System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   en System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   en System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpClient.GetConnection()
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112
+[2017-01-28 20:24:09,286]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.Net.WebException: No se puede resolver el nombre remoto: 'relay-hosting.secureserver.net'
+   en System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   en System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   en System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   en System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   en System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   en System.Net.Mail.SmtpClient.GetConnection()
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112
+[2017-01-28 20:38:48,384]-ERROR-trobadoo.com.web.Controllers.Ajax.AjaxSendMailController[SendMail]-Linea:117-Error while sending email: Error al enviar correo.
+System.Net.Mail.SmtpException: Error al enviar correo. ---> System.IO.IOException: Controlador no válido.
+
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.ReadCore(Byte[] buffer, Int32 offset, Int32 count)
+   en System.IO.FileStream.Read(Byte[] array, Int32 offset, Int32 count)
+   en System.Net.Mime.MimePart.Send(BaseWriter writer, Boolean allowUnicode)
+   en System.Net.Mime.MimeMultiPart.Send(BaseWriter writer, Boolean allowUnicode)
+   en System.Net.Mail.Message.Send(BaseWriter writer, Boolean sendEnvelope, Boolean allowUnicode)
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Net.Mail.SmtpClient.Send(MailMessage message)
+   en trobadoo.com.web.Helpers.FileHelper.SendMail(String recipients, String subject, String body, String attachmentFilenames, ILog log) en D:\trobadoo\webTrobadooMVC\Helpers\FileHelper.cs:línea 112

@@ -1,0 +1,131 @@
+﻿@model trobadoo.com.web.Models.Contact.FormContactModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="contFormContacto">
+    <h2 class="tituloDestacado mb-5">
+        @Model.GetTranslation("1")
+    </h2>
+    <span class="txtMedio visible">@Model.GetTranslation("2")</span>
+    <form id="formContact" name="formContact" action="#" method="post" role="form" class="mv-20">
+    <input type="hidden" id="action" name="action" value="sendContactMail" />
+    <input type="hidden" id="languageCode" name="languageCode" value="@Model.LanguageCode" />
+    <div class="row">
+        <!-- Nombre -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactName" class="txtMedio bold hidden">
+                @Model.GetTranslation("3") *</label>
+            <div class="input-group">
+                <input id="inputContactName" name="inputContactName" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("3") *">
+                <div class="input-group-addon">
+                    <i class="fa fa-user fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Apellidos -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactSurnames" class="txtMedio bold hidden">
+                @Model.GetTranslation("4") *</label>
+            <div class="input-group">
+                <input id="inputContactSurnames" name="inputContactSurnames" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("4") *">
+                <div class="input-group-addon">
+                    <i class="fa fa-user fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- E-mail -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactMail" class="txtMedio bold hidden">
+                @Model.GetTranslation("5") *</label>
+            <div class="input-group">
+                <input id="inputContactMail" name="inputContactMail" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("5") *">
+                <div class="input-group-addon">
+                    <i class="fa fa-envelope-o fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Confirma e-mail -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactConfMail" class="txtMedio bold hidden">
+                @Model.GetTranslation("6") *</label>
+            <div class="input-group">
+                <input id="inputContactConfMail" name="inputContactConfMail" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("6") *">
+                <div class="input-group-addon">
+                    <i class="fa fa-envelope-o fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Teléfono fijo -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactPhone" class="txtMedio bold hidden">
+                @Model.GetTranslation("7")</label>
+            <div class="input-group col-xs-9 col-sm-8 col-md-6">
+                <input id="inputContactPhone" name="inputContactPhone" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("7")">
+                <div class="input-group-addon">
+                    <i class="fa fa-phone fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Teléfono móvil -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactCell" class="txtMedio bold hidden">
+                @Model.GetTranslation("8")</label>
+            <div class="input-group col-xs-9 col-sm-8 col-md-6">
+                <input id="inputContactCell" name="inputContactCell" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("8")">
+                <div class="input-group-addon">
+                    <i class="fa fa-mobile fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Dirección -->
+        <div class="col-xs-12 col-sm-12 form-group">
+            <label for="inputContactAddress" class="txtMedio bold hidden">
+                @Model.GetTranslation("9")</label>
+            <textarea id="inputContactAddress" name="inputContactAddress" class="form-control input-lg"
+                rows="2" placeholder="@Model.GetTranslation("9")"></textarea>
+        </div>
+        <!-- Código Postal -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactPostCode" class="txtMedio bold hidden">
+                @Model.GetTranslation("10")</label>
+            <div class="input-group col-xs-9 col-sm-8 col-md-6">
+                <input id="inputContactPostCode" name="inputContactPostCode" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("10")">
+                <div class="input-group-addon">
+                    <i class="fa fa-barcode fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Ciudad -->
+        <div class="col-xs-12 col-sm-6 form-group">
+            <label for="inputContactCityName" class="txtMedio bold hidden">
+                @Model.GetTranslation("11")</label>
+            <div class="input-group">
+                <input id="inputContactCityName" name="inputContactCityName" type="text" class="form-control input-lg"
+                    placeholder="@Model.GetTranslation("11")">
+                <div class="input-group-addon">
+                    <i class="fa fa-map-marker fa-lg"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mensaje -->
+        <div class="col-xs-12 col-sm-12 form-group">
+            <label for="inputContactMessage" class="txtMedio bold hidden">
+                @Model.GetTranslation("12") *</label>
+            <textarea id="inputContactMessage" name="inputContactMessage" class="form-control input-lg"
+                rows="4" placeholder="@Model.GetTranslation("13")..."></textarea>
+        </div>
+        <!-- Botón -->
+        <div class="col-xs-12 col-sm-12 mv-20 text-center">
+            <button id="sendMail" type="submit" class="btn btn-lg btn-danger pl-30 pr-30">
+                @Model.GetTranslation("14")</button>
+        </div>
+    </div>
+    </form>
+</div>

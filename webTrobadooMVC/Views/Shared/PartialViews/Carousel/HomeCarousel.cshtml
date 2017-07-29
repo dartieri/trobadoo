@@ -1,0 +1,14 @@
+﻿@model trobadoo.com.web.Models.Carousel.HomeCarouselModel
+<!-- Carousel -->
+<div class="cCarouselPrincipal">
+    <div class="container">
+        <div id="carouselPrincipal" class="owl-carousel owl-theme hidden-xs">
+            @foreach (var photoUrl in Model.PhotosUrl)
+            {
+                <div class="item">
+                    <img src="@photoUrl" alt="Trobadoo.com" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

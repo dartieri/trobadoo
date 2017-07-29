@@ -1,0 +1,66 @@
+﻿@model trobadoo.com.web.Models.Home.PresentationModel
+<div id="contSuperior" class="contSuperiorHome">
+    <div class="container clearfix">
+        <!-- Ilustraciones -->
+        <div id="contIlustraciones" class="p-35">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="row">
+                        <div class="imgIlustracion col-sm-12">
+                            <img src="@Html.Raw(string.Format("/Content/images/home_paso1_{0}.png",Model.LanguageCode))" alt="@Model.GetTranslation("1")..." />
+                        </div>
+                        <div class="txtIlustracion col-sm-12">
+                            <span class="tituloDestacado gris">@Model.GetTranslation("2")
+                                <br class="visible-md visible-lg" />
+                                @Model.GetTranslation("3") </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="row">
+                        <div class="imgIlustracion col-sm-12">
+                            <img src="/Content/images/home_paso2.png" alt="...@Model.GetTranslation("4")" />
+                        </div>
+                        <div class="txtIlustracion col-sm-12">
+                            <span class="tituloDestacado gris">@Model.GetTranslation("5")
+                                <br class="visible-md visible-lg" />
+                                @Model.GetTranslation("6") </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="row">
+                        <div class="imgIlustracion col-sm-12">
+                            <img src="/Content/images/home_paso3.png" alt="@Model.GetTranslation("7")" />
+                        </div>
+                        <div class="txtIlustracion col-sm-12">
+                            <span class="tituloDestacado gris">@Model.GetTranslation("8")
+                                <br class="visible-md visible-lg" />
+                                @Model.GetTranslation("9") </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contCentral" class="contCentralHome">
+    <div class="container clearfix">
+        <!-- Textos home -->
+        <div class="textosHome p-35">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <i class="fa fa-quote-left fa-3x rojo"></i>
+                    <div class="titulo visible pl-30">
+                        @Model.GetTranslation("10")
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <p class="txtGrande gris">
+                        @Model.GetTranslation("11")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

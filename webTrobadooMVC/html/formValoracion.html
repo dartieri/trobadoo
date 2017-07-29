@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Trobadoo, Formulario de Valoración</title>
+
+     <!-- Fuente Google -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+	<link href="css/helpers.css" rel="stylesheet">
+	<link href="css/trobadoo.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<!--<link href="navbar-fixed-top.css" rel="stylesheet">-->
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Cabecera, Fixed navbar -->
+	<div id="menuPrincipal" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-4x blanco"></i>
+				</button>
+				<a class="navbar-brand" href="inicio.html"><img id="logoCabecera" src="images/logo_cabecera.png" alt="Trobadoo" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="linksMenu nav navbar-nav navbar-right">
+					<li><a href="concepto.html">Concepto</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="formValoracion.html" class="btnValoracion active">Valoración de artículos gratuita!</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contenido -->
+	<div id="contCentral" class="contCentralFormContacto">
+		<div class="container clearfix">
+			<div class="contFormContacto">
+				<h2 class="tituloDestacado mb-5">
+					Solicitud de valoración gratuita
+				</h2>
+				<span class="txtMedio visible">
+					Por favor, rellene los campos para ayudarnos a valorar sus objetos.<br />
+					Los campos indicados con un * son obligatorios.
+				</span>
+				
+				<form role="form" class="mv-20">
+					<span class="titulo gris">
+						Indique sus datos personales
+					</span>
+					<div class="contValoracionDatos">
+						<div class="row">
+							<!-- Nombre -->
+							<div class="col-xs-12 col-sm-6 form-group">
+    							<label for="inputValoracionNombre" class="txtMedio bold hidden">Nombre *</label>
+    							<div class="input-group">
+    								<input id="inputValoracionNombre" type="text" class="form-control input-lg" placeholder="Nombre *">
+      								<div class="input-group-addon">
+      									<i class="fa fa-user fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Apellidos -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionApellidos" class="txtMedio bold hidden">Apellidos *</label>
+  								<div class="input-group">
+    								<input id="inputValoracionApellidos" type="text" class="form-control input-lg" placeholder="Apellidos *">
+      								<div class="input-group-addon">
+      									<i class="fa fa-user fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- E-mail -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionEmail" class="txtMedio bold hidden">E-mail *</label>
+  								<div class="input-group">
+    								<input id="inputValoracionEmail" type="email" class="form-control input-lg" placeholder="E-mail *">
+      								<div class="input-group-addon">
+      									<i class="fa fa-envelope-o fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Confirma e-mail -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionConfEmail" class="txtMedio bold hidden">Confirme e-mail *</label>
+  								<div class="input-group">
+    								<input id="inputValoracionConfEmail" type="email" class="form-control input-lg" placeholder="Confirme e-mail *">
+      								<div class="input-group-addon">
+      									<i class="fa fa-envelope-o fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Teléfono fijo -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionTelf" class="txtMedio bold hidden">Teléfono fijo</label>
+  								<div class="input-group col-xs-9 col-sm-8 col-md-6">
+    								<input id="inputValoracionTelf" type="tel" class="form-control input-lg" placeholder="Teléfono">
+      								<div class="input-group-addon">
+      									<i class="fa fa-phone fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Teléfono móvil -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionMov" class="txtMedio bold hidden">Teléfono móvil</label>
+  								<div class="input-group col-xs-9 col-sm-8 col-md-6">
+    								<input id="inputValoracionMov" type="tel" class="form-control input-lg" placeholder="Móvil">
+      								<div class="input-group-addon">
+      									<i class="fa fa-mobile fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Dirección -->
+  							<div class="col-xs-12 col-sm-12 form-group">
+  								<label for="inputValoracionDireccion" class="txtMedio bold hidden">Dirección</label>
+  								<textarea id="inputValoracionDireccion" class="form-control input-lg" rows="2" placeholder="Dirección"></textarea>
+  							</div>
+  						
+  							<!-- Código Postal -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionCP" class="txtMedio bold hidden">Código Postal</label>
+  								<div class="input-group col-xs-9 col-sm-8 col-md-6">
+    								<input id="inputValoracionCP" type="number" class="form-control input-lg" placeholder="CP">
+      								<div class="input-group-addon">
+      									<i class="fa fa-barcode fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Población -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionPoblacion" class="txtMedio bold hidden">Población</label>
+  								<div class="input-group">
+    								<input id="inputValoracionPoblacion" type="text" class="form-control input-lg" placeholder="Población">
+      								<div class="input-group-addon">
+      									<i class="fa fa-map-marker fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						</div>
+  					</div>
+  					
+  					<span class="titulo gris">
+						Describa el artículo
+					</span>
+					<div class="contValoracionDescripcion">
+						<div class="row">
+							<!-- Descripción -->
+							<div class="col-xs-12 col-sm-12 form-group">
+    							<label for="inputValoracionDesc" class="txtMedio bold hidden">Descripción *</label>
+    							<div class="input-group">
+    								<input id="inputValoracionDesc" type="text" class="form-control input-lg" placeholder="Descripción">
+      								<div class="input-group-addon">
+      									<i class="fa fa-info fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Año compra -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionCompra" class="txtMedio bold hidden">Año de compra (aprox.) *</label>
+  								<div class="col-xs-9 col-sm-8 p-0">
+  									<select id="inputValoracionCompra" class="form-control input-lg">
+										<option>Año de compra (aprox.)</option>
+										<option>2014</option>
+										<option>2013</option>
+										<option>2012</option>
+										<option>2011</option>
+										<option>2010</option>
+										<option>2009</option>
+										<option>2008</option>
+										<option>2007</option>
+										<option>2006</option>
+										<option>2005</option>
+									</select>
+								</div>
+  							</div>
+  						
+  							<!-- Precio compra -->
+  							<div class="col-xs-12 col-sm-6 form-group">
+  								<label for="inputValoracionCompra" class="txtMedio bold hidden">Precio de compra *</label>
+  								<div class="input-group col-xs-9 col-sm-8">
+    								<input id="inputValoracionCompra" type="email" class="form-control input-lg" placeholder="Precio de compra">
+      								<div class="input-group-addon">
+      									<i class="fa fa-euro fa-lg"></i>
+      								</div>
+      							</div>
+  							</div>
+  						
+  							<!-- Detalles artículo -->
+  							<div class="col-xs-12 col-sm-12 form-group">
+  								<label for="inputValoracionMensaje" class="txtMedio bold hidden">Detalles del artículo *</label>
+  								<textarea id="inputValoracionMensaje" class="form-control input-lg" rows="6" placeholder="Escriba aquí los detalles del artículo a valorar..."></textarea>
+  							</div>
+  							
+  							<!-- Añadir fotos -->
+  							<div class="col-xs-12 col-sm-12 form-group">
+  								<span class="btn btn-md btn-warning fileinput-button">
+  									<i class="fa fa-camera pr-5"></i>
+  									<span>Añadir fotos...</span>
+  									<input id="fileupload" type="file" name="files[]" multiple="" class="hidden">
+  								</span>
+  							</div>
+  						</div>
+  					</div>
+  					
+  					<!-- Botón -->
+  					<div class="mb-50 text-center">
+  						<button type="submit" class="btn btn-lg btn-danger pl-30 pr-30">Enviar</button>
+  					</div>
+  					
+  				</form>
+			</div>
+		</div>
+	</div>
+    
+   <div id="contListasPie">
+    	<div class="container clearfix">
+    		<div class="listasPie">
+    			<div class="row hidden-xs">
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Salón - Comedor</span></dt>
+    						<dd>Sofás</dd>
+							<dd>Mesas</dd>
+							<dd>Sillas</dd>
+							<dd>Sillones</dd>
+							<dd>Muebles de comedor</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Dormitorio</span></dt>
+    						<dd>Camas</dd>
+							<dd>Armarios</dd>
+							<dd>Cómodas</dd>
+							<dd>Colchones</dd>
+							<dd>Somieres</dd>
+							<dd>Muebles de dormitorio</dd>
+							<dd>Mesitas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Cocina</span></dt>
+    						<dd>Muebles de cocina</dd>
+							<dd>Mesas</dd>
+							<dd>Sillas y Taburetes</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Deporte</span></dt>
+    						<dd>Interior</dd>
+							<dd>Acuáticos</dd>
+							<dd>Aire libre</dd>
+							<dd>Pistas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Luz y Decoración</span></dt>
+    						<dd>Iluminación</dd>
+							<dd>Alfombras</dd>
+							<dd>Cuadros</dd>
+							<dd>Espejos</dd>
+							<dd>Arte de la mesa</dd>
+							<dd>Varios</dd>
+						</dl>
+    				</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Electrodomésticos</span></dt>
+    						<dd>Lavadora-Secadora</dd>
+							<dd>Frío-Climatización</dd>
+							<dd>Lavavajillas</dd>
+							<dd>Horno</dd>
+							<dd>Encimera</dd>
+							<dd>Extracción</dd>
+							<dd>Profesional</dd>
+							<dd>Pequeño electrod.</dd>
+							<dd>Varios</dd>
+						</dl>
+    				</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Oficina</span></dt>
+    						<dd>Escritorio</dd>
+							<dd>Sillas</dd>
+							<dd>Orden</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Multimedia</span></dt>
+    						<dd>Ordenadores</dd>
+							<dd>Telefonía</dd>
+							<dd>Consolas</dd>
+							<dd>Periféricos</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Cultura</span></dt>
+    						<dd>Libros</dd>
+							<dd>CD, DVD y BluRay</dd>
+							<dd>Vinilos</dd>
+							<dd>Instrumentos</dd>
+							<dd>Videojuegos</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Audio - Vídeo</span></dt>
+    						<dd>Imagen</dd>
+							<dd>Sonido</dd>
+							<dd>Fotografía</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie visible-xs col-xs-6">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Deporte</span></dt>
+    						<dd>Interior</dd>
+							<dd>Acuáticos</dd>
+							<dd>Aire libre</dd>
+							<dd>Pistas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Bricolage</span></dt>
+    						<dd>Herramientas de mano</dd>
+							<dd>Electro-portátiles</dd>
+							<dd>Maquinaria</dd>
+							<dd>Materiales</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+							<dt><span class="txtMedio bold rojo">Jardín</span></dt>
+							<dd>Herramientas de jardín</dd>
+							<dd>Maquinaria</dd>
+							<dd>Muebles de jardín</dd>
+							<dd>Mascotas</dd>
+							<dd>Piscina</dd>
+							<dd>Decoración</dd>
+							<dd>Barbacoas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="visible-xs txtMedio bold rojo text-center">
+					Salón - Comedor <span class="separador">|</span> Dormitorio <span class="separador">|</span> Cocina 
+					<span class="separador">|</span> Deporte <span class="separador">|</span> Luz y Decoración 
+					<span class="separador">|</span> Electrodomésticos <span class="separador">|</span> Oficina 
+					<span class="separador">|</span> Multimedia <span class="separador">|</span> Cultura 
+					<span class="separador">|</span> Audio - Vídeo <span class="separador">|</span> Deporte 
+					<span class="separador">|</span> Bricolage <span class="separador">|</span> Jardín
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container clearfix">
+			<div class="pieContacto text-center mv-20">
+				<a href="mailto:info@trobadoo.com" class="hi-icon-effect-5 mh-10">
+					<span class="hi-icon hi-icon-mail"></span>
+				</a>
+				<a href="http://www.facebook.com/trobadoo" target="_blank" class="hi-icon-effect-5 mh-10">
+					<span class="hi-icon hi-icon-facebook"></span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.diseno.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			
+		});
+
+	</script>
+
+</body>
+</html>

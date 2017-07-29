@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Trobadoo</title>
+
+     <!-- Fuente Google -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+	<link href="css/helpers.css" rel="stylesheet">
+	<link href="css/trobadoo.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<!--<link href="navbar-fixed-top.css" rel="stylesheet">-->
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Cabecera, Fixed navbar -->
+	<div id="menuPrincipal" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars fa-4x blanco"></i>
+				</button>
+				<a class="navbar-brand" href="inicio.html"><img id="logoCabecera" src="images/logo_cabecera.png" alt="Trobadoo" /></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="linksMenu nav navbar-nav navbar-right">
+					<li><a href="concepto.html">Concepto</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+					<li><a href="formValoracion.html" class="btnValoracion">Valoración de artículos gratuita!</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Carousel -->
+	<div id="carouselPrincipal" class="owl-carousel owl-theme hidden-xs">
+		<div class="item"><img src="images/carousel1.jpg" alt="" /></div>
+		<div class="item"><img src="images/carousel2.jpg" alt="" /></div>
+		<div class="item"><img src="images/carousel3.jpg" alt="" /></div>
+		<div class="item"><img src="images/carousel4.jpg" alt="" /></div>
+		<div class="item"><img src="images/carousel5.jpg" alt="" /></div>
+		<div class="item"><img src="images/carousel6.jpg" alt="" /></div>
+	</div>
+	<div id="cabeceraMobile" class="visible-xs"></div>
+	
+	<div class="container hidden">
+		<div class="visible-lg txtGrande">RESOLUCIÓN LG</div>
+		<div class="visible-md txtGrande">RESOLUCIÓN MD</div>
+		<div class="visible-sm txtGrande">RESOLUCIÓN SM</div>
+		<div class="visible-xs txtGrande">RESOLUCIÓN XS</div>
+		<div class="hidden-xs visible-xxs txtGrande">RESOLUCIÓN XXS</div>
+	</div>
+
+	<div id="contSuperior" class="contSuperiorHome">
+		<div class="container clearfix">
+			<!-- Ilustraciones -->
+			<div id="contIlustraciones" class="p-35">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="row">
+							<div class="imgIlustracion col-sm-12">
+								<img src="images/home_paso1.png" alt="Si tienes cosas que no necesitas..." />
+							</div>
+							<div class="txtIlustracion col-sm-12">
+								<span class="tituloDestacado gris">
+									Si tienes cosas <br class="visible-md visible-lg" />que no necesitas
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="row">
+							<div class="imgIlustracion col-sm-12">
+								<img src="images/home_paso2.png" alt="...nosotros te las vendemos" />
+							</div>
+							<div class="txtIlustracion col-sm-12">
+								<span class="tituloDestacado gris">
+									Nosotros te las <br class="visible-md visible-lg" />vendemos
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="row">
+							<div class="imgIlustracion col-sm-12">
+								<img src="images/home_paso3.png" alt="¡Y consiguesun dinero extra!" />
+							</div>
+							<div class="txtIlustracion col-sm-12">
+								<span class="tituloDestacado gris">
+									¡Y consigues <br class="visible-md visible-lg" />un dinero extra!
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	<div id="contCentral" class="contCentralHome">
+		<div class="container clearfix">
+			<!-- Textos home -->
+			<div class="textosHome p-35">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<i class="fa fa-quote-left fa-3x rojo"></i>
+						<div class="titulo visible pl-30">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibheuismod tincidunt ut 
+							laoreet dolore magnaaliquam erat volutpat.
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6">
+						<p class="txtGrande gris">
+							Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+							aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit 
+							esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et 
+							iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    
+   <div id="contListasPie">
+    	<div class="container clearfix">
+    		<div class="listasPie">
+    			<div class="row hidden-xs">
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Salón - Comedor</span></dt>
+    						<dd>Sofás</dd>
+							<dd>Mesas</dd>
+							<dd>Sillas</dd>
+							<dd>Sillones</dd>
+							<dd>Muebles de comedor</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Dormitorio</span></dt>
+    						<dd>Camas</dd>
+							<dd>Armarios</dd>
+							<dd>Cómodas</dd>
+							<dd>Colchones</dd>
+							<dd>Somieres</dd>
+							<dd>Muebles de dormitorio</dd>
+							<dd>Mesitas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Cocina</span></dt>
+    						<dd>Muebles de cocina</dd>
+							<dd>Mesas</dd>
+							<dd>Sillas y Taburetes</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Deporte</span></dt>
+    						<dd>Interior</dd>
+							<dd>Acuáticos</dd>
+							<dd>Aire libre</dd>
+							<dd>Pistas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Luz y Decoración</span></dt>
+    						<dd>Iluminación</dd>
+							<dd>Alfombras</dd>
+							<dd>Cuadros</dd>
+							<dd>Espejos</dd>
+							<dd>Arte de la mesa</dd>
+							<dd>Varios</dd>
+						</dl>
+    				</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Electrodomésticos</span></dt>
+    						<dd>Lavadora-Secadora</dd>
+							<dd>Frío-Climatización</dd>
+							<dd>Lavavajillas</dd>
+							<dd>Horno</dd>
+							<dd>Encimera</dd>
+							<dd>Extracción</dd>
+							<dd>Profesional</dd>
+							<dd>Pequeño electrod.</dd>
+							<dd>Varios</dd>
+						</dl>
+    				</div>
+    				<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Oficina</span></dt>
+    						<dd>Escritorio</dd>
+							<dd>Sillas</dd>
+							<dd>Orden</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+    					<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Multimedia</span></dt>
+    						<dd>Ordenadores</dd>
+							<dd>Telefonía</dd>
+							<dd>Consolas</dd>
+							<dd>Periféricos</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Cultura</span></dt>
+    						<dd>Libros</dd>
+							<dd>CD, DVD y BluRay</dd>
+							<dd>Vinilos</dd>
+							<dd>Instrumentos</dd>
+							<dd>Videojuegos</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Audio - Vídeo</span></dt>
+    						<dd>Imagen</dd>
+							<dd>Sonido</dd>
+							<dd>Fotografía</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie visible-xs col-xs-6">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Deporte</span></dt>
+    						<dd>Interior</dd>
+							<dd>Acuáticos</dd>
+							<dd>Aire libre</dd>
+							<dd>Pistas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+    						<dt><span class="txtMedio bold rojo">Bricolage</span></dt>
+    						<dd>Herramientas de mano</dd>
+							<dd>Electro-portátiles</dd>
+							<dd>Maquinaria</dd>
+							<dd>Materiales</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+					<div class="listaPie col-xs-6 col-sm-3 col-md-2">
+						<dl class="txtPeque">
+							<dt><span class="txtMedio bold rojo">Jardín</span></dt>
+							<dd>Herramientas de jardín</dd>
+							<dd>Maquinaria</dd>
+							<dd>Muebles de jardín</dd>
+							<dd>Mascotas</dd>
+							<dd>Piscina</dd>
+							<dd>Decoración</dd>
+							<dd>Barbacoas</dd>
+							<dd>Varios</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="visible-xs txtMedio bold rojo text-center">
+					Salón - Comedor <span class="separador">|</span> Dormitorio <span class="separador">|</span> Cocina 
+					<span class="separador">|</span> Deporte <span class="separador">|</span> Luz y Decoración 
+					<span class="separador">|</span> Electrodomésticos <span class="separador">|</span> Oficina 
+					<span class="separador">|</span> Multimedia <span class="separador">|</span> Cultura 
+					<span class="separador">|</span> Audio - Vídeo <span class="separador">|</span> Deporte 
+					<span class="separador">|</span> Bricolage <span class="separador">|</span> Jardín
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container clearfix">
+			<div class="pieContacto text-center mv-20">
+				<a href="mailto:info@trobadoo.com" class="hi-icon-effect-5 mh-10">
+					<span class="hi-icon hi-icon-mail"></span>
+				</a>
+				<a href="http://www.facebook.com/trobadoo" target="_blank" class="hi-icon-effect-5 mh-10">
+					<span class="hi-icon hi-icon-facebook"></span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.diseno.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			
+			$(function() {
+				$("img").lazyload({placeholder : "images/loading.gif", threshold : 100});
+			});
+			
+			var owl = $("#carouselPrincipal");
+			
+			owl.owlCarousel({
+				navigation : false,
+				singleItem : true,
+				autoPlay : true,
+				stopOnHover : true,
+				transitionStyle : "fade"
+			});
+			
+		});
+
+	</script>
+
+</body>
+</html>

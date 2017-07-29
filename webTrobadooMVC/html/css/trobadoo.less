@@ -1,0 +1,592 @@
+@import "mixins.less"; 
+@import "colores.less";
+
+/* Extra small devices (phones, up to 480px) | No usa media query es el uso por defecto de bootstrap */
+
+    /* Menú Principal ----------------------------------------------------------------*/
+    #menuPrincipal {
+        background-color: @rojo;
+        border: none;
+        .box-shadow-black (0,1,1,0.3);
+        
+        .navbar-header {
+            #logoCabecera {
+                height: 42px !important;
+                margin-top: 2px;
+            }
+        
+            button {
+                border: none;
+                &:hover, &:focus {
+                    background: @blanco !important;
+                    .fa-bars { color: @rojo !important; }
+                }
+            }
+        }
+        
+        .navbar-collapse {
+            padding: 0;
+            border-color: @blanco;
+            //.box-shadow-black;
+        
+            .linksMenu {
+                margin: 0;
+                
+                li {
+                    border-bottom: 1px solid;
+                    border-color: rgba(255,255,255,0.3);
+                    &:last-child { border-bottom: none; }
+                    
+                    a {
+                        color: @blanco;
+                        font-family: @fuente-rotulos;
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 18px;
+                        &:hover { .background(@blanco,0.3); }
+                        
+                        &.btnIdioma {
+                            padding: 12px 18px;
+                            img { padding: 0 10px 0 0; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #carouselPrincipal .item img {
+        display: block;
+        width: 110%;
+        height: auto;
+    }
+    
+    #cabeceraMobile {
+        min-height: 170px;
+        max-height: 225px;
+        background-image: url('../images/carousel1.jpg');
+        background-position: center middle;
+        background-repeat: no-repeat;
+        background-size: 170%;
+    }
+    
+    #contSuperior {
+        background-color: @grispalido;
+        border-bottom: 10px solid @grisflojo;
+    }
+    
+    #contCentral { background-color: @blanco; }
+    
+    /* Pie ---------------------------------------------------------------------------*/
+    #contListasPie {
+        background-color: @grisflojo;
+        border-top: 10px solid @grispalido;
+        
+        .listasPie {
+            padding: 25px 10px;
+            
+            .separador {
+                font-weight: normal;
+                padding: 0 7px;
+                line-height: 28px;
+            }
+        }
+    }
+    
+    footer {
+        background-color: @rojo;
+        
+        .pieContacto {
+            .contactoMail a, .contacoFacebook a {
+                font-family: @fuente-rotulos;
+                color: @blanco;
+                
+                .fa-stack {
+                    .fa-circle {
+                        border: 3px solid @blanco;
+                        color: @rojo;
+                        -webkit-transition: background 0.3s, color 0.3s;
+                        -moz-transition: background 0.3s, color 0.3s;
+                        transition: background 0.3s, color 0.3s;
+                        /*.transition (0.6, ease-out);*/
+                    }
+                    .fa-facebook, .fa-envelope-o { color: @blanco; }
+                }
+                
+                &:hover {
+                    color: @blanco;
+                    text-decoration: none;
+                    
+                    .fa-circle { border-color: @grisflojo; color: @blanco; }
+                    .fa-facebook, .fa-envelope-o { color: @rojo; }
+                }
+            }
+        }
+    }
+    
+    /* Home --------------------------------------------------------------------------*/
+    .contSuperiorHome {        
+        #contIlustraciones {
+            .imgIlustracion { text-align: center; }
+            .txtIlustracion {
+                text-align: center;
+                margin: 15px 0 25px;
+            }
+        }
+    }
+    
+    .contCentralHome {
+        .textosHome {
+            .fa {
+                position: absolute;
+                left: 5px;
+                top: 0;
+            }
+            
+            p { margin: 15px 0 0 30px; }
+        }
+    }
+    
+    /* Concepto ----------------------------------------------------------------------*/
+    .contCentralConcepto {
+        .textosConcepto {
+            padding-bottom: 190px !important;
+            background-image: url('../images/billetes.png');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            
+            [class*="col-"] { margin-bottom: 25px; }
+            
+            ul {
+                padding-left: 15px;
+                > li {
+                    list-style-image: url('../images/bullet_rojo.png');
+                    margin: 10px 0 0;
+                    padding-left: 2px;
+                }
+            }
+        }
+    }
+    
+    /* Servicios ---------------------------------------------------------------------*/
+    .contCentralServicios {
+        h2 {
+            text-align: center;
+            display: block !important;
+            line-height: 34px;
+        }
+    }
+    
+    /* Contacto ----------------------------------------------------------------------*/
+    #mapaContacto {
+        width: 100%;
+        
+        #iframeMapa {
+			width: 100%;
+			height: 300px;
+			border: 0;
+		}
+    }
+    
+    .datosContacto { padding: 0 5px; }
+    
+    /* Formularios -------------------------------------------------------------------*/
+    .form-group {
+        margin-bottom: 20px;
+        label { text-indent: 5px; }
+    }
+    
+    .form-control {
+        .box-shadow-black (0,1,1,0.15,inset);
+        .font-family (@fuente-rotulos);
+        color: @gris;
+    }
+    
+    .input-group {
+        input { border-right: 0; }
+        .input-group-addon {
+            background-color: @grispalido !important;
+            .box-shadow-black (0,1,1,0.15,inset);
+            
+            [class*="fa-"] {
+                color: @grismedio;
+                .opacity(0.5);
+            }
+        }
+    }
+    
+    .contFormContacto { margin: 30px 5px; }
+    
+    .contValoracionDatos, .contValoracionDescripcion {
+        padding: 15px 15px 0;
+        margin: 10px -20px 40px;
+        background-color: @grispalido;
+    }
+    
+    .contValoracionDescripcion { margin-bottom: 20px; }
+    
+    /* Modificamos color placeholder -------------------------------------------------*/
+    ::-webkit-input-placeholder { color: @grisflojo; } /* WebKit */
+    :-moz-placeholder { color: @grismedio; } /* Firefox 18- */
+    ::-moz-placeholder { color: @grismedio; } /* Firefox 19+ */
+    :-ms-input-placeholder { color: @grismedio; } /* IE 10+ */
+
+
+
+/* Small devices (tablets, 768px y mayores) @screen-sm */
+@media (min-width: 768px) {
+    
+    /* Menú Principal ----------------------------------------------------------------*/
+    #menuPrincipal {
+        .container {
+            width: 100% !important;
+            padding: 0;
+        
+            .navbar-header {
+                width: 100% !important;
+                button { display: block !important; }
+                .navbar-brand { margin: 0 !important; }
+            }
+            
+            .navbar-collapse {
+                &.collapse { display: none !important; }
+                &.in { display: block !important; }
+                
+                .linksMenu {
+                    width: 100%;
+                    border-top: 1px solid @blanco;
+                    > li { float: none !important; }
+                }
+            }
+        }
+    }
+    
+    .cCarouselPrincipal {
+        background-image: url('../images/bg_carousel.png');
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    
+    #carouselPrincipal .item img { width: 100%; }
+    
+    /* Pie ---------------------------------------------------------------------------*/
+    #contListasPie { 
+        .listasPie .listaPie { min-height: 210px; }
+    }
+    
+    /* Concepto ----------------------------------------------------------------------*/
+    .contCentralConcepto {
+        .textosConcepto {
+            padding-bottom: 190px !important;
+            
+            [class*="col-"] {
+                margin-bottom: 25px;
+                min-height: 150px;
+            }
+        }
+    }
+
+    /* Servicios ---------------------------------------------------------------------*/
+    .contCentralServicios {
+        h2 { text-align: left; }
+        
+        [class*="col-"] {
+            text-align: left;
+            
+            .descServicio {
+                margin: 15px 0 0 30px;
+                p {
+                    padding: 0 !important;
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    /* Contacto ----------------------------------------------------------------------*/
+    #mapaContacto #iframeMapa { height: 400px; }
+    
+    /* Formularios -------------------------------------------------------------------*/
+    .contFormContacto { margin: 30px 15px; }
+    
+    .contValoracionDatos, .contValoracionDescripcion {
+        padding: 25px 25px 5px;
+        margin: 10px 0 40px;
+    }
+}
+
+
+
+/* Medium devices (desktops, 992px y mayores) @screen-md */
+@media (min-width: 992px) {
+
+    /* Menú Principal ----------------------------------------------------------------*/
+    #menuPrincipal {
+        height: 90px;
+        margin-bottom: 0;
+        
+        .container {
+            width: 970px !important;
+        
+            .navbar-header {
+                width: auto !important;
+                margin-top: 8px;
+                button { display: none !important; }
+            }
+        
+            .navbar-collapse {
+                &.collapse { display: block !important; }
+                
+                .linksMenu {
+                    width: auto !important;
+                    border-top: none;
+                    margin-top: 27px;
+                    > li {
+                        float: left !important;
+                        border-bottom: none !important;
+                    }
+                    
+                    a {
+                        font-size: 17px;
+                        padding: 8px 12px;
+                        margin: 0 8px 0 0;
+                        .rounded(50);
+                        
+                        &.active, &.btnValoracion {
+                            color: @rojo;
+                            font-weight: 700;
+                        }
+                        &.active { background-color: @blanco; }
+                        &.btnValoracion { background-color: #FFF2B2; }
+                        &.btnIdioma {
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            img { padding: 0; }
+                            span { display: none; }
+                        }
+                    }
+                }
+                
+                .menuTrobadoo {
+                    width: auto !important;
+                    border-top: none;
+                    margin-top: 10px;
+                    > li {
+                        float: left !important;
+                        border-bottom: none !important;
+                        text-align: center;
+                        
+                        .text-main {
+                            font-size: 17px;
+                            font-weight: 300;
+                            color: @blanco;
+                            padding: 8px 16px;
+                            -webkit-animation: moveFromRight 300ms ease;
+                            -moz-animation: moveFromRight 300ms ease;
+                            -ms-animation: moveFromRight 300ms ease;
+                        }
+                        
+                        &:hover {
+                            background-color: #FFF;
+                            
+                            [class*="fa-"] {
+                                color: @rojo;
+                                font-size: 60px;
+                                .opacity(0.3);
+                                animation: moveFromLeft 400ms ease;
+                                -webkit-animation: moveFromLeft 400ms ease;
+                                -moz-animation: moveFromLeft 400ms ease;
+                                -ms-animation: moveFromLeft 400ms ease;
+                            }
+                            
+                            .text-main {
+                                color: @rojo;
+                                animation: moveFromRight 300ms ease;
+                                -webkit-animation: moveFromRight 300ms ease;
+                                -moz-animation: moveFromRight 300ms ease;
+                                -ms-animation: moveFromRight 300ms ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .contSuperiorHome {
+        .textosHome p { margin: 0; }
+    }
+    
+    #contCentral {}
+    
+    #carouselPrincipal { margin-top: 15px; }
+    
+    /* Pie ---------------------------------------------------------------------------*/
+    #contListasPie { 
+        .listasPie {
+            padding: 25px 25px 10px;
+            
+            .listaPie {
+                min-height: 205px;
+                dd { display: block; }
+            }
+        }
+    }
+    
+    footer {
+        .pieContacto { }
+    }
+    
+    /* Home --------------------------------------------------------------------------*/
+    .contCentralHome {
+        .textosHome p { margin: 0; }
+    }
+    
+    /* Concepto ----------------------------------------------------------------------*/
+    .contCentralConcepto {
+        .textosConcepto {
+            padding-bottom: 165px !important;
+            background-position: 60px bottom;
+            
+            [class*="col-"] { margin-bottom: 0; }
+        }
+    }
+
+    /* Servicios ---------------------------------------------------------------------*/
+    .contCentralServicios {
+        [class*="col-"] {
+            text-align: center !important;
+            
+            .descServicio {
+                margin: 0;
+                p {
+                    padding: 0 10px !important;
+                    &:first-child { padding: 0 !important; }
+                }
+            }
+        }
+    }
+    
+    /* Contacto ----------------------------------------------------------------------*/
+    #mapaContacto {
+        margin-top: 15px;
+        #iframeMapa { height: 450px; }
+    }
+    
+    .datosContacto { padding: 0 !important; }
+    
+    /* Formularios -------------------------------------------------------------------*/
+    .contCentralFormContacto, .contCentralFormValoracion { margin-top: 25px; }
+    
+    .contFormContacto { margin: 30px; }
+}
+
+
+
+/* Large devices (large desktops, 1200px y mayores) @screen-lg */
+@media (min-width: 1200px) {
+    
+    /* Menú Principal ----------------------------------------------------------------*/
+    #menuPrincipal {
+        .container .navbar-collapse {
+            width: 1140px !important;
+        
+            .linksMenu a {
+                font-size: 18px !important;
+                padding: 8px 20px !important;
+                margin-right: 10px !important;
+                
+                &.btnIdioma { margin-left: 5px !important; }
+            }
+        }
+    }
+            
+    /* Pie ---------------------------------------------------------------------------*/
+    #contListasPie {
+        .listasPie .listaPie { min-height: 185px; }
+    }
+}
+
+
+
+/* Only phones @screen-xxs */
+@media (max-width: 480px) {
+    
+    /* Menú Principal ----------------------------------------------------------------*/
+    #menuPrincipal {
+        .navbar-header #logoCabecera {
+            height: 38px !important;
+            margin-top: 4px;
+        }
+    }
+    
+    /* Pie ---------------------------------------------------------------------------*/
+    #contListasPie {
+        .listasPie {
+            .listaPie { width: auto !important; }
+            dl { margin-bottom: 10px; }
+        }
+    }
+    
+    /* Concepto ----------------------------------------------------------------------*/
+    .contSuperiorConcepto {
+        .iconosConcepto {
+            [class*="col-"] {
+                width: 100%;
+                margin-bottom: 15px;
+                &:last-child { margin-bottom: 0; }
+                
+                span[class*="fa-"] { float: left; }
+                span.tituloDestacado {
+                    float: left !important;
+                    margin: 50px 0 0 7px !important
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Only iPhones */
+@media (max-width: 400px) {
+    /* Menú Principal -----------------------------------------------------------------*/
+    #menuPrincipal .navbar-header {
+        .navbar-toggle { margin-right: 10px !important; }
+        #logoCabecera {
+            height: 32px !important;
+            margin-top: 6px;
+        }
+    }
+    
+    #cabeceraMobile {
+        min-height: 150px;
+        background-size: 180%;
+    }
+    
+    /* Home ---------------------------------------------------------------------------*/
+    .contSuperiorHome {
+        #contIlustraciones {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+    
+    .contCentralHome {
+        .textosHome {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            .fa { display: none; }
+            div.titulo { padding-left: 0 !important; }
+            p { margin-left: 0; }
+        }
+    }
+    
+    /* Concepto -----------------------------------------------------------------------*/
+    .contCentralConcepto {
+        .textosConcepto {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+}
