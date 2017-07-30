@@ -8,10 +8,12 @@ namespace trobadoo.com.web.Models.Common
 {
     public class FooterModel:SimpleModel
     {
+        public SeoModel SeoModel;
+        
         public FooterModel(string languageCode)
             : base("footer",languageCode)
         {
-            
+            SeoModel = new SeoModel(languageCode);
         }
     }
 }

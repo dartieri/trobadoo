@@ -1,13 +1,69 @@
 ﻿@model trobadoo.com.web.Models.Common.FooterModel
-<footer>
-		<div class="container clearfix">
-			<div class="pieContacto text-center mv-20">
-				<a href="mailto:info@trobadoo.com" class="hi-icon-effect-5 mh-10">
-					<span class="hi-icon hi-icon-mail"></span>
-				</a>
-				<a href="http://www.facebook.com/trobadoo" target="_blank" class="hi-icon-effect-5 mh-10">
-					<span class="hi-icon hi-icon-facebook facebook"></span>
-				</a>
-			</div>
-		</div>
-	</footer>
+<div class="footer">
+    <div class="wrap">
+        <div class="contact-section">
+            <div class="col-md-4 follow text-left">
+                <h3>
+                    Siguenos</h3>
+                <p>
+                    Trobadoo en las redes sociales</p>
+                <div class="social-icons">
+                    <i class="twitter"></i>
+                    <i class="facebook">
+                        @*<a href="http://www.facebook.com/trobadoo" target="_blank" class="hi-icon-effect-5 mh-10">
+                            <span class="hi-icon hi-icon-facebook facebook"></span>
+                        </a>*@
+                    </i>
+                    <i class="googlepluse"></i>
+                    <i class="pinterest"></i>
+                    <i class="linkedin"></i>
+                </div>
+            </div>
+            <div class="col-md-4 subscribe text-left">
+                <h3>
+                    Newsletter</h3>
+                <p>
+                    Recibe por correo las últimas actualizaciones.</p>
+                <input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+                <input type="submit" value="Subscribe"/>
+            </div>
+            <div class="col-md-4 help text-right">
+                <h3>
+                    ¿Necesitas ayuda?</h3>
+                <p>
+                    Una pregunta, una duda, una petición de valoración</p>
+                <a href="/Contact">Contacta con nosotros</a> 
+                @*<a href="mailto:info@trobadoo.com"
+                    class="hi-icon-effect-5 mh-10"><span class="hi-icon hi-icon-mail"></span></a>*@
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="footer-middle">
+            @Html.Partial("PartialViews/Common/SeoLinks", Model.SeoModel)
+            <div class="col-md-6 about-text text-right">
+                <h4>
+                    Trobadoo</h4>
+                <p>
+                    TROBADOO vende las cosas que no necesitas y te ofrece la posibilidad de conseguir
+                    un dinero extra con el que no contabas.TROBADOO también tiene artículos nuevos a
+                    precios de ocasión, provenientes de restos de stoks, de cierres de tiendas, etc.
+                    Trae lo que no necesitas, nosotros lo vendemos al mejor precio. En TROBADOO encontrarás
+                    muebles, artículos de menaje para hogar, aparatos electrodomésticos, objetos decorativos,
+                    material deportivo, aparatos y accesorios para fotografía, aparatos de imagen y
+                    sonido, materiales para bricolaje, artículos de oficina, entre otras muchas cosas.
+                </p>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="cards text-center">
+            <img src="images/cards.jpg" alt="" />
+        </div>
+        <div class="copyright text-center">
+            <p>
+                Copyright &copy; 2015 All rights reserved | Template by <a href="http://w3layouts.com">
+                    W3layouts</a></p>
+        </div>
+    </div>
+</div>

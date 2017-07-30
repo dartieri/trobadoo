@@ -20,7 +20,10 @@ namespace trobadoo.com.web.Models.Home
             PresentationModel = new PresentationModel(languageCode);
         }
 
-        public override void AddJs() { }
+        public override void AddJs()
+        {
+            JsManager.addJS("/Content/js/home.js");
+        }
         public override void AddCss() { }
         public override void AddDocumentReady() { }
 

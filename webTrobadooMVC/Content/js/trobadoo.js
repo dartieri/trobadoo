@@ -1,18 +1,10 @@
 ﻿$(document).ready(function () {
 
-    $(function () {
-        $("img").lazyload({ placeholder: "/Content/images/loading.gif", threshold: 100 });
-    });
+    //start menu
+    $(".megamenu").megamenu();
 
-    var owl = $("#carouselPrincipal");
-
-    owl.owlCarousel({
-        navigation: false,
-        singleItem: true,
-        autoPlay: true,
-        stopOnHover: true,
-        transitionStyle: "fade"
-    });
+    //Image Lazy load
+    //$("img").lazyload({ placeholder: "/Content/images/loading.gif", threshold: 100 });
 });
 
 function nAlert(text, layout) {

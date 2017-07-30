@@ -2,43 +2,50 @@
 @{
     Layout = null;
 }
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="/Content/assets/ico/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="/Content/assets/ico/favicon.ico" />
     <title>Trobadoo</title>
     @Html.Raw(Model.PrintCssIncludes())
+    @*
     <!-- Custom styles for this template -->
     <!--<link href="navbar-fixed-top.css" rel="stylesheet">-->
     <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+    *@
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
     <!-- Cabecera, Fixed navbar -->
     @Html.Partial("PartialViews/Common/Header", Model.HeaderModel)
-    <!-- Carousel -->
-    @if (Model.BaseCarouselModel != null)
-    {
-        @Html.Partial("PartialViews/Carousel/HomeCarousel", Model.BaseCarouselModel)
-    }
-    @Html.Partial("PartialViews/Common/MobileHeader", null)
-    @RenderBody()
-    @Html.Partial("PartialViews/Common/SeoLinks", Model.SeoModel)
+    <div class="wrap">
+        @Html.Partial("PartialViews/Common/NavBar", Model.NavbarModel)
+
+        @RenderBody()
+    </div>
     @Html.Partial("PartialViews/Common/Footer", Model.FooterModel)
-    <!-- Bootstrap core JavaScript -->
     @Html.Raw(Model.PrintJsIncludes())
-    @*<script src="/Content/js/jquery-1.11.1.min.js"></script>
+    @*
+    <script src="/Content/js/jquery-1.11.1.min.js"></script>
     <script src="/Content/js/jquery.lazyload.js"></script>
     <script src="/Content/js/bootstrap.min.js"></script>
     <script src="/Content/js/jquery.diseno.js"></script>
-    <script src="/Content/js/owl.carousel.min.js"></script>*@
+    <script src="/Content/js/owl.carousel.min.js"></script>
+    *@
     <script type="text/javascript">
     @Html.Raw(Model.PrintJsInits())
     </script>

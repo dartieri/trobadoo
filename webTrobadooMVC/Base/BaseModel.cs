@@ -22,8 +22,8 @@ namespace trobadoo.com.web.Base
         private string cdnDomain;
         public HeaderInfo HeaderInfo;
         public HeaderModel HeaderModel;
+        public NavbarModel NavbarModel;
         public FooterModel FooterModel;
-        public SeoModel SeoModel; 
         public BaseCarouselModel BaseCarouselModel;
 
         public BaseModel(SectionName activeSection, string pageName, string languageCode = "es", bool showTopContainer = false)
@@ -32,35 +32,48 @@ namespace trobadoo.com.web.Base
             _languageCode = languageCode;
             _showTopContainer = showTopContainer;
             HeaderModel = new HeaderModel(activeSection, _languageCode);
+            NavbarModel = new NavbarModel(activeSection, _languageCode);
             FooterModel = new FooterModel(_languageCode);
-            SeoModel = new SeoModel(_languageCode);
-
+            
             JsManager = new SEOLibrary.cGestorJS(cdnDomain);
             CssManager = new SEOLibrary.cGestorCSS(pageName, cdnDomain);
             JsInits = new JsInitializations();
 
+            CssManager.addCss("/Content/css/bootstrap.css");
+            CssManager.addCss("/Content/css/style.css");
+            CssManager.addCss("/Content/css/trobadoo.css");
             CssManager.addCss("/Content/css/font-awesome.min.css");
-            CssManager.addCss("/Content/css/bootstrap.min.css");
-            CssManager.addCss("/Content/css/helpers.css");
+            CssManager.addCss("http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
+            CssManager.addCss("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+            CssManager.addCss("/Content/css/megamenu.css");
+            CssManager.addCss("/Content/css/flexslider.css");
+            
+            
+            /*CssManager.addCss("/Content/css/helpers.css");
             CssManager.addCss("/Content/css/trobadoo.css");
             CssManager.addCss("/Content/css/notify.css"); 
             CssManager.addCss("/Content/css/owl.carousel.css");
             CssManager.addCss("/Content/css/owl.theme.css");
-            CssManager.addCss("/Content/css/owl.transitions.css");
+            CssManager.addCss("/Content/css/owl.transitions.css");*/
 
-            JsManager.addJS("/Content/js/jquery-1.11.1.min.js");
-            JsManager.addJS("/Content/js/jquery.lazyload.js");
+            JsManager.addJS("/Content/js/jquery.min.js");
+            JsManager.addJS("/Content/js/megamenu.js");
+            JsManager.addJS("/Content/js/responsiveslides.min.js");
+            JsManager.addJS("/Content/js/jquery.flexisel.js");
+            JsManager.addJS("/Content/js/trobadoo.js");
+            
+            /*JsManager.addJS("/Content/js/jquery.lazyload.js");
             JsManager.addJS("/Content/js/bootstrap.min.js");
             JsManager.addJS("/Content/js/jquery.diseno.js");
             JsManager.addJS("/Content/js/notify.min.js");
             //JsManager.addJS("/Content/js/noty/jquery.noty.packaged.min.js");
             JsManager.addJS("/Content/js/owl.carousel.min.js");
-            JsManager.addJS("/Content/js/trobadoo.js");
+            JsManager.addJS("/Content/js/trobadoo.js");*/
         }
 
         public string GetTranslation(string key)
         {
-            return TranslationManager.GetTranslation(_pageName, _languageCode,key);
+            return TranslationManager.GetTranslation(_pageName, _languageCode, key);
         }
 
         public string PrintCssIncludes()

@@ -1,66 +1,194 @@
 ﻿@model trobadoo.com.web.Models.Home.PresentationModel
-<div id="contSuperior" class="contSuperiorHome">
-    <div class="container clearfix">
-        <!-- Ilustraciones -->
-        <div id="contIlustraciones" class="p-35">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="row">
-                        <div class="imgIlustracion col-sm-12">
-                            <img src="@Html.Raw(string.Format("/Content/images/home_paso1_{0}.png",Model.LanguageCode))" alt="@Model.GetTranslation("1")..." />
-                        </div>
-                        <div class="txtIlustracion col-sm-12">
-                            <span class="tituloDestacado gris">@Model.GetTranslation("2")
-                                <br class="visible-md visible-lg" />
-                                @Model.GetTranslation("3") </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="row">
-                        <div class="imgIlustracion col-sm-12">
-                            <img src="/Content/images/home_paso2.png" alt="...@Model.GetTranslation("4")" />
-                        </div>
-                        <div class="txtIlustracion col-sm-12">
-                            <span class="tituloDestacado gris">@Model.GetTranslation("5")
-                                <br class="visible-md visible-lg" />
-                                @Model.GetTranslation("6") </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="row">
-                        <div class="imgIlustracion col-sm-12">
-                            <img src="/Content/images/home_paso3.png" alt="@Model.GetTranslation("7")" />
-                        </div>
-                        <div class="txtIlustracion col-sm-12">
-                            <span class="tituloDestacado gris">@Model.GetTranslation("8")
-                                <br class="visible-md visible-lg" />
-                                @Model.GetTranslation("9") </span>
-                        </div>
-                    </div>
-                </div>
+<div class="main-top">
+    <div class="col-md-8 banner">
+        <!-- start slider -->
+        <!----->
+        <div class="slider">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider">
+                    @for (int i = 1; i < 19; i++)
+                    {
+                    <li>
+                        <img src="@Html.Raw("/Content/images/slider/slider" + @i + ".jpg")" alt="" />
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <!----->
+        <!-- end  slider -->
+    </div>
+    <div class="col-md-4 right-grid">
+        <div class="right-grid-top">
+            <div class="r-sale text-center">
+                <h6>
+                    Winter wear</h6>
+                <h2>
+                    Sale</h2>
+            </div>
+            <div class="r-discount">
+                <span>upto</span>
+                <h2>
+                    50%</h2>
+                <p>
+                    OFF</p>
+                <a href="#">shop now<i class="go"></i></a>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="right-grid-bottom">
+            <div class="right-grid-bottom-left">
+                <h3>
+                    Oferta de la semana</h3>
+                <!--p>Expires in 3:42:56</p-->
+                <h5>
+                    IPad Air2 Modelo 2016</h5>
+                <h2>
+                    20% Descuento</h2>
+                <a href="single.html">Ver oferta<i class="go"></i></a>
+            </div>
+            <div class="right-grid-bottom-right">
+                <img src="/Content/images/offers/offer.png" alt="IPad Air2 Negro Modelo 2016" />
+            </div>
+            <div class="clearfix">
             </div>
         </div>
     </div>
+    <div class="clearfix">
+    </div>
 </div>
-<div id="contCentral" class="contCentralHome">
-    <div class="container clearfix">
-        <!-- Textos home -->
-        <div class="textosHome p-35">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <i class="fa fa-quote-left fa-3x rojo"></i>
-                    <div class="titulo visible pl-30">
-                        @Model.GetTranslation("10")
-                    </div>
+<div class="new-arrivals text-center">
+    <div class="col-md-3 new-arrival-head">
+        <h3>
+            Novedades</h3>
+        <a class="btn btn-1 btn-1d" href="products.html">Ver todo</a>
+    </div>
+    <div class="col-md-3 product-item">
+        <a href="products.html">
+            <img src="/Content/images/watch.jpg" class="img-responsive" alt="" /></a>
+        <h3>
+            Sofas</h3>
+        <a href="single.html">Comprar<i class="go"></i></a>
+    </div>
+    <div class="col-md-3 product-item">
+        <a href="products.html">
+            <img src="/Content/images/men-jacket.jpg" class="img-responsive zoom-img" alt="" /></a>
+        <h3>
+            Colchones</h3>
+        <a href="single.html">Comprar<i class="go"></i></a>
+    </div>
+    <div class="col-md-3 product-item">
+        <a href="products.html">
+            <img src="/Content/images/shoes.jpg" class="img-responsive zoom-img" alt="" /></a>
+        <h3>
+            Barbacoas</h3>
+        <a href="single.html">Comprar<i class="go"></i></a>
+    </div>
+    <div class="clearfix">
+    </div>
+</div>
+<div class="best-sellers">
+    <div class="best-sellers-head">
+        <h3>
+            Mejoras ventas</h3>
+    </div>
+    <div class="best-sellers-menu">
+        <ul>
+            <li><a class="active" href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Other</a></li>
+        </ul>
+    </div>
+    <div class="clearfix">
+    </div>
+</div>
+<div class="device">
+    <div class="course_demo">
+        <ul id="flexiselDemo">
+            <li>
+                <div class="ipad text-center">
+                    <img src="/Content/images/phone.jpg" alt="" width="200" height="140" />
+                    <h4>
+                        Ipad Mini</h4>
+                    <h3>
+                        $499</h3>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <p class="txtGrande gris">
-                        @Model.GetTranslation("11")
-                    </p>
+            </li>
+            <li>
+                <div class="ipad text-center">
+                    <img src="/Content/images/phone1.jpg" alt="" width="140" height="200" />
+                    <h4>
+                        Ipad Mini</h4>
+                    <h3>
+                        $499</h3>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <div class="ipad text-center">
+                    <img src="/Content/images/phone2.jpg" alt="" width="200" height="140" />
+                    <h4>
+                        Ipad Mini</h4>
+                    <h3>
+                        $499</h3>
+                </div>
+            </li>
+            <li>
+                <div class="ipad text-center">
+                    <img src="/Content/images/phone3.jpg" alt="" width="200" height="140" />
+                    <h4>
+                        Ipad Mini</h4>
+                    <h3>
+                        $499</h3>
+                </div>
+            </li>
+            <li>
+                <div class="ipad text-center">
+                    <img src="/Content/images/phone4.jpg" alt="" width="200" height="140" />
+                    <h4>
+                        Ipad Mini</h4>
+                    <h3>
+                        $499</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="gap gap-medium">
+</div>
+<div class="transport-grid">
+    <div class="col-md-4 shipping">
+        <h3>
+            <!--i class="shipping-icon"></i>Transporte-->
+            <i class="fa fa-truck fa-2" aria-hidden="true"></i>Transporte
+        </h3>
+        <p>
+            Recogida y entrega de sus muebles a domicilio. No pagues nada hasta vender tus articulos.<br />
+            El importe se descuenta del precio de la venta.</p>
+    </div>
+    <div class="col-md-4 appraisal">
+        <h3>
+            <!--i class="correct-icon "></i>Valoración gratuita-->
+            <i class="fa fa-eur fa-2" aria-hidden="true"></i>Valoración gratuita
+        </h3>
+        <p>
+            Vamos a tu domicilio y valoramos todos los objetos que desees vender.
+            <br />
+            Estimación por fotos sin moverte de tu casa.
+            <!--Rellene el formulario. -->
+        </p>
+    </div>
+    <div class="col-md-4 return">
+        <h3>
+            <!--i class="return-icon"></i>Escaparate Premium-->
+            <i class="fa fa-television fa-2" aria-hidden="true"></i>Escaparate Premium
+        </h3>
+        <p>
+            600m2 de exposición en tienda.
+            <br />
+            Un equipo de comerciales encargados de vender y dar un valor añadido a tus artículos.</p>
+    </div>
+    <div class="clearfix">
     </div>
 </div>
