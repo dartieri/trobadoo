@@ -1,5 +1,5 @@
 ﻿<pages>
-  <page id="header">
+  <page id="navbar">
     <language id="es">
       <literal id="1"><![CDATA[Concepto]]></literal>
       <literal id="2"><![CDATA[/Concepto]]></literal>
