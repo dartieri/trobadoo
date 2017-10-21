@@ -17,7 +17,7 @@ body{
 	padding:0;
 	margin:0;
     font-family: 'Merriweather', serif;
-	background:#f7f7f7;
+	/*background:#f7f7f7;*/
 }
 body a{
     transition:0.5s all;
@@ -139,9 +139,28 @@ i.cart{
 }
 .logo{
 	float:left;
+	/*width:45%;*/
 }
+
+.language-selection
+{
+    float:right;
+    width:15%;
+}
+
+.language-selection a.language-button
+{
+    float:right;
+    padding:12px 10px;
+}
+
+.language-selection a.language-button img
+{
+    padding:0 10px 0 0;
+}
+
 .search{
-	float:right;
+	float:left;
 	width: 35%;
 }
 /*--start-search--*/
@@ -174,7 +193,8 @@ i.cart{
 	top: 3px;
 }
 .navigation-strip{
-	background:#000000;
+	/*background:#000000;*/
+	background : #e32727;
 	padding:1.5em;
 }
 .navigation-strip h4 {
@@ -478,7 +498,8 @@ ul.callbacks_tabs.callbacks2_tabs {
 }
 .best-sellers{
 	background:#000;
-	padding: 2.5em 2em;
+	/*padding: 2.5em 2em;*/
+    padding: 1.0em 1em;
 }
 .best-sellers-head{
 	float:left;

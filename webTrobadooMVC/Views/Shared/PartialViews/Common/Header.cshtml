@@ -4,31 +4,38 @@
     <div class="wrap">
         <div class="header-bottom">
             <div class="logo">
-                <a href="/">
-                    <img src="/Content/images/logo.jpg" class="img-responsive" alt="" /></a>
+                <a class="fleft" href="/">
+                    <img src="/Content/images/common/logo.jpg" class="img-responsive" alt="" /></a>
             </div>
             <div class="search">
                 <div class="search2">
-                    <form>
+                    <form method="post" action="@Html.Raw(Model.GetTranslation("4"))">
                     <input type="submit" value="">
-                    <input type="text" value="Search for a product, category or brand" onfocus="this.value = '';"
-                        onblur="if (this.value == '') {this.value = 'Search for a product, category or brand';}" />
+                    <input id="globalSearch" type="text" placeholder="@Html.Raw(Model.GetTranslation("1"))" />
                     </form>
                 </div>
+            </div>
+            <div class="language-selection">
+                <ul>
+                    <li data-lang="es" class="@Model.LanguageIconClass("es")">
+                        <a href="?lang=es" class="language-button">
+                            <img src="/Content/images/common/flag_es.png" alt="Castellano" /><span>@Html.Raw(Model.GetTranslation("2"))</span>
+                        </a>
+                    </li>
+                    <li data-lang="en" class="@Model.LanguageIconClass("en")">
+                        <a href="?lang=en" class="language-button">
+                            <img src="/Content/images/common/flag_uk.png" alt="English" /><span>@Html.Raw(Model.GetTranslation("3"))</span>
+                        </a>
+                    </li>
+                    @*<li><a href="?lang=de" class="btnIdioma">
+                        <img src="/Content/images/common/flag_de.png" alt="Deutch" /><span>Deutch</span></a> 
+                      </li>
+                    *@
+                </ul>
             </div>
             <div class="clearfix">
             </div>
         </div>
     </div>
-    @*
-    <li data-lang="es" class="@Model.LanguageIconClass("es")"><a href="?lang=es" class="btnIdioma">
-        <img src="/Content/images/flag_es.png" alt="Castellano" /><span>Castellano</span></a>
-    </li>
-    <li data-lang="en" class="@Model.LanguageIconClass("en")"><a href="?lang=en" class="btnIdioma">
-        <img src="/Content/images/flag_uk.png" alt="English" /><span>English</span></a>
-    </li>
-    <li><a href="?lang=de" class="btnIdioma">
-                    <img src="/Content/images/flag_de.png" alt="Deutch" /><span>Deutch</span></a> </li>
-    *@
 </div>
 <!-- header-section-ends -->

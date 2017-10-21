@@ -28,9 +28,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<![endif]-->
     *@
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <!-- Cabecera, Fixed navbar -->
     @Html.Partial("PartialViews/Common/Header", Model.HeaderModel)
     <div class="wrap">
         @Html.Partial("PartialViews/Common/NavBar", Model.NavbarModel)

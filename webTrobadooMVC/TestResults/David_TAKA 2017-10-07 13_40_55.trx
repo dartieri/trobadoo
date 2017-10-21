@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="23a829bf-c70e-489b-b49d-37ab962aa69a" name="David@TAKA 2017-10-07 13:40:55" runUser="Taka\David" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b9cd67bb-db27-4f7a-a93c-0bf063e95286">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="David_TAKA 2017-10-07 13_40_55">
+      <DeploymentItem filename="D:\git\trobadoo\TrobadooUtils\bin\Debug\com.trobadoo.utils.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-10-07T13:40:55.3005796+02:00" queuing="2017-10-07T13:40:57.5495796+02:00" start="2017-10-07T13:40:58.0435796+02:00" finish="2017-10-07T13:41:00.9975796+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestZipFolder" storage="d:\git\trobadoo\testproject1\bin\debug\testproject1.dll" id="a9f86f5e-84bf-3a9f-fb04-e6d857244301">
+      <Execution id="8ba1cc20-c536-4d20-a303-4b38c98bbda0" />
+      <TestMethod codeBase="D:/git/trobadoo/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrobadooUtilsTest.TestZipHelper, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestZipFolder" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a9f86f5e-84bf-3a9f-fb04-e6d857244301" executionId="8ba1cc20-c536-4d20-a303-4b38c98bbda0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8ba1cc20-c536-4d20-a303-4b38c98bbda0" testId="a9f86f5e-84bf-3a9f-fb04-e6d857244301" testName="TestZipFolder" computerName="TAKA" duration="00:00:01.7186512" startTime="2017-10-07T13:40:58.2465796+02:00" endTime="2017-10-07T13:41:00.7235796+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ba1cc20-c536-4d20-a303-4b38c98bbda0">
+    </UnitTestResult>
+  </Results>
+</TestRun>

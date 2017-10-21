@@ -28,6 +28,18 @@ namespace trobadoo.com.web.Entities
             SetIconClass();
         }
 
+        public MenuSection(string title, string url, string linkClass, bool showIcon = false)
+        {
+            _id = string.Empty;
+            _title = title;
+            _url = url;
+            _linkClass = linkClass;
+            _cssClass = string.Empty;
+            _showIcon = showIcon;
+
+            SetIconClass();
+        }
+
         private void SetIconClass()
         {
             switch (_id.ToLower())

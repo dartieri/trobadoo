@@ -3,16 +3,72 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webTrobadooMVC", "webTrobadooMVC.csproj", "{58A5FE0B-89BC-4C79-9530-39F7C247D753}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrobadooWebUpdater", "..\TrobadooWebUpdater\TrobadooWebUpdater.csproj", "{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrobadooUtils", "..\TrobadooUtils\TrobadooUtils.csproj", "{27D0F0EB-EA24-452E-8523-4FE823B51D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrobadooUtilsTest", "..\TestProject1\TrobadooUtilsTest.csproj", "{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D9830DA-5115-46F7-9B68-73ED2CF26DDE}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		webTrobadooMVC.vsmdi = webTrobadooMVC.vsmdi
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = webTrobadooMVC.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{58A5FE0B-89BC-4C79-9530-39F7C247D753}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Debug|x86.ActiveCfg = Debug|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Debug|x86.Build.0 = Debug|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Release|Any CPU.ActiveCfg = Release|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Release|x86.ActiveCfg = Release|x86
+		{DA72695A-9F80-4A3A-AB6A-4DD79B8155B2}.Release|x86.Build.0 = Release|x86
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{27D0F0EB-EA24-452E-8523-4FE823B51D10}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3CE71CBF-BB12-4C75-8D41-396ABB7D7B9C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

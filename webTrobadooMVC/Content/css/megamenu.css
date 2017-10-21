@@ -85,8 +85,10 @@ skyblue .megapanel img:hover,.skyblue form.contact input[type="text"]:focus,.sky
 }
 /* start megamenu colors */
 .skyblue li a.color1:hover{
-	background:#EF5F21;
-	color: #ffffff;
+	/*background:#EF5F21;
+	color: #ffffff;*/
+	background:#ffffff;
+	color: #e32727;
 }
 .skyblue li a.color2:hover{
 	background:#589D3E;

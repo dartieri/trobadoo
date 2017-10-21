@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2fe0076e-dea2-43e0-be67-599df912fa9f" name="David@TAKA 2017-10-07 17:18:42" runUser="Taka\David" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b9cd67bb-db27-4f7a-a93c-0bf063e95286">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="David_TAKA 2017-10-07 17_18_42">
+      <DeploymentItem filename="D:\git\trobadoo\TrobadooUtils\bin\Debug\com.trobadoo.utils.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-10-07T17:18:42.1510000+02:00" queuing="2017-10-07T17:18:42.3930000+02:00" start="2017-10-07T17:18:42.5180000+02:00" finish="2017-10-07T17:18:43.8660000+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestGetFilesLastModificationDate" storage="d:\git\trobadoo\testproject1\bin\debug\testproject1.dll" id="11718d02-5df2-7bfd-a819-bf0b61b2a698">
+      <Execution id="ea9b1c18-5a19-4c62-ae2e-2c5b873c4398" />
+      <TestMethod codeBase="D:/git/trobadoo/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrobadooUtilsTest.TestZipHelper, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGetFilesLastModificationDate" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="11718d02-5df2-7bfd-a819-bf0b61b2a698" executionId="ea9b1c18-5a19-4c62-ae2e-2c5b873c4398" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ea9b1c18-5a19-4c62-ae2e-2c5b873c4398" testId="11718d02-5df2-7bfd-a819-bf0b61b2a698" testName="TestGetFilesLastModificationDate" computerName="TAKA" duration="00:00:00.0365518" startTime="2017-10-07T17:18:42.6780000+02:00" endTime="2017-10-07T17:18:43.5970000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea9b1c18-5a19-4c62-ae2e-2c5b873c4398">
+      <Output>
+        <StdOut>the message</StdOut>
+        <DebugTrace>File desktop.ini: 07/10/2017 17:12:20
+File Oryx Antelope.jpg: 02/11/2006 13:37:09
+File slider1.jpg: 21/06/2017 18:10:06
+File slider10.jpg: 21/06/2017 18:28:38
+File slider11.jpg: 21/06/2017 18:29:50
+File slider12.jpg: 21/06/2017 18:36:48
+File slider13.jpg: 21/06/2017 18:39:06
+File slider14.jpg: 21/06/2017 18:40:50
+File slider15.jpg: 21/06/2017 18:52:34
+File slider16.jpg: 21/06/2017 18:55:50
+File slider17.jpg: 21/06/2017 19:13:44
+File slider18.jpg: 21/06/2017 19:16:14
+File slider19.jpg: 21/06/2017 19:17:42
+File slider2.jpg: 21/06/2017 17:22:24
+File slider3.jpg: 21/06/2017 17:24:12
+File slider4.jpg: 21/06/2017 17:57:40
+File slider5.jpg: 21/06/2017 18:12:48
+File slider6.jpg: 21/06/2017 18:14:30
+File slider7.jpg: 21/06/2017 18:22:08
+File slider8.jpg: 21/06/2017 18:23:50
+File slider9.jpg: 21/06/2017 18:06:06
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

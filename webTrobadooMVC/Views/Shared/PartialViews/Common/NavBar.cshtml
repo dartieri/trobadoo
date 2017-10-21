@@ -1,20 +1,6 @@
 ﻿@model trobadoo.com.web.Models.Common.NavbarModel
-@*
-@foreach (var menuSection in Model.Sections)
-{
-    <li id="@menuSection.Id" class="@Html.Raw(menuSection.CssClass)">
-        <a href="@menuSection.Url" class="@menuSection.LinkClass">
-        @if (menuSection.ShowIcon)
-        {
-            <span class="menuIcon"><i class="fa @menuSection.IconClass"></i></span>
-        }
-        @Html.Raw(menuSection.Title)
-    </a></li>
-}
-*@
 <div class="navigation-strip">
-    <h4>
-        Categorías<i class="arrow"></i></h4>
+    <h4>@Html.Raw(Model.GetTranslation("9"))<i class="arrow"></i></h4>
     <div class="top-menu">
         <!-- start header menu -->
         <ul class="megamenu skyblue">

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9ef6c9fb-ffd5-47ff-821b-ca38987d8705" name="David@TAKA 2017-10-07 14:05:36" runUser="Taka\David" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b9cd67bb-db27-4f7a-a93c-0bf063e95286">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="David_TAKA 2017-10-07 14_05_36">
+      <DeploymentItem filename="D:\git\trobadoo\TrobadooUtils\bin\Debug\com.trobadoo.utils.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-10-07T14:05:36.1365796+02:00" queuing="2017-10-07T14:05:36.1955796+02:00" start="2017-10-07T14:05:36.2565796+02:00" finish="2017-10-07T14:05:37.4555796+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestGetFilesModifiedSinceNoResults" storage="d:\git\trobadoo\testproject1\bin\debug\testproject1.dll" id="606db03e-d781-efd3-94fa-a3b228cb9015">
+      <Execution id="3da9f370-ba55-4d0e-8a22-4689fd310744" />
+      <TestMethod codeBase="D:/git/trobadoo/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TrobadooUtilsTest.TestZipHelper, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGetFilesModifiedSinceNoResults" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="606db03e-d781-efd3-94fa-a3b228cb9015" executionId="3da9f370-ba55-4d0e-8a22-4689fd310744" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3da9f370-ba55-4d0e-8a22-4689fd310744" testId="606db03e-d781-efd3-94fa-a3b228cb9015" testName="TestGetFilesModifiedSinceNoResults" computerName="TAKA" duration="00:00:00.0749937" startTime="2017-10-07T14:05:36.3585796+02:00" endTime="2017-10-07T14:05:37.3005796+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3da9f370-ba55-4d0e-8a22-4689fd310744">
+      <Output>
+        <DebugTrace>Send to debug output.
+Num Files:0
+Files:System.Collections.Generic.List`1[System.String]
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   en TrobadooUtilsTest.TestZipHelper.TestGetFilesModifiedSinceNoResults() en D:\git\trobadoo\TestProject1\TestZipHelper.cs:línea 46
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

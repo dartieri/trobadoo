@@ -43,8 +43,6 @@ namespace trobadoo.com.web.Base
             CssManager.addCss("/Content/css/style.css");
             CssManager.addCss("/Content/css/trobadoo.css");
             CssManager.addCss("/Content/css/font-awesome.min.css");
-            CssManager.addCss("http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic");
-            CssManager.addCss("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
             CssManager.addCss("/Content/css/megamenu.css");
             CssManager.addCss("/Content/css/flexslider.css");
             
@@ -69,6 +67,9 @@ namespace trobadoo.com.web.Base
             //JsManager.addJS("/Content/js/noty/jquery.noty.packaged.min.js");
             JsManager.addJS("/Content/js/owl.carousel.min.js");
             JsManager.addJS("/Content/js/trobadoo.js");*/
+
+            JsInits.AddDocumentReadyAction("com.trobadoo.Trobadoo.init();");
+ 
         }
 
         public string GetTranslation(string key)

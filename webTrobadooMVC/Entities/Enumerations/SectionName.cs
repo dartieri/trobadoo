@@ -11,6 +11,9 @@ namespace trobadoo.com.web.Entities.Enumerations
         Concepto,
         Servicios,
         Contacto,
-        Valoration
+        Valoration,
+        Productos,
+        Admin,
+        None
     }
 }

@@ -20,7 +20,8 @@
     </div>
     <div class="col-md-4 right-grid">
         <div class="right-grid-top">
-            <div class="r-sale text-center">
+            <img title="Video Trobadoo" src="http://via.placeholder.com/390x168" />
+            @*<div class="r-sale text-center">
                 <h6>
                     Winter wear</h6>
                 <h2>
@@ -35,18 +36,15 @@
                 <a href="#">shop now<i class="go"></i></a>
             </div>
             <div class="clearfix">
-            </div>
+            </div>*@
         </div>
         <div class="right-grid-bottom">
             <div class="right-grid-bottom-left">
-                <h3>
-                    Oferta de la semana</h3>
+                <h3>@Html.Raw(Model.GetTranslation("OFERTA_SEMANA"))</h3>
                 <!--p>Expires in 3:42:56</p-->
-                <h5>
-                    IPad Air2 Modelo 2016</h5>
-                <h2>
-                    20% Descuento</h2>
-                <a href="single.html">Ver oferta<i class="go"></i></a>
+                <h5>IPad Air2 Modelo 2016</h5>
+                <h2>20% Descuento</h2>
+                <a href="single.html">@Html.Raw(Model.GetTranslation("VER_OFERTA"))<i class="go"></i></a>
             </div>
             <div class="right-grid-bottom-right">
                 <img src="/Content/images/offers/offer.png" alt="IPad Air2 Negro Modelo 2016" />
@@ -60,38 +58,33 @@
 </div>
 <div class="new-arrivals text-center">
     <div class="col-md-3 new-arrival-head">
-        <h3>
-            Novedades</h3>
-        <a class="btn btn-1 btn-1d" href="products.html">Ver todo</a>
+        <h3>@Html.Raw(Model.GetTranslation("NOVEDADES"))</h3>
+        <a class="btn btn-1 btn-1d" href="@Html.Raw(Model.GetTranslation("LINK_NOVEDADES"))">@Html.Raw(Model.GetTranslation("VER_TODO"))</a>
     </div>
     <div class="col-md-3 product-item">
         <a href="products.html">
-            <img src="/Content/images/watch.jpg" class="img-responsive" alt="" /></a>
-        <h3>
-            Sofas</h3>
-        <a href="single.html">Comprar<i class="go"></i></a>
+            <img src="/Content/images/concept.jpg" class="img-responsive" alt="" /></a>
+        <h3>@Html.Raw(Model.GetTranslation("CONCEPTO"))</h3>
+        <a href="@Html.Raw(Model.GetTranslation("LINK_CONCEPTO"))">@Html.Raw(Model.GetTranslation("MAS_INFO"))<i class="go"></i></a>
     </div>
     <div class="col-md-3 product-item">
         <a href="products.html">
-            <img src="/Content/images/men-jacket.jpg" class="img-responsive zoom-img" alt="" /></a>
-        <h3>
-            Colchones</h3>
-        <a href="single.html">Comprar<i class="go"></i></a>
+            <img src="/Content/images/services.jpg" class="img-responsive zoom-img" alt="" /></a>
+        <h3>@Html.Raw(Model.GetTranslation("SERVICIOS"))</h3>
+        <a href="@Html.Raw(Model.GetTranslation("LINK_SERVICIOS"))">@Html.Raw(Model.GetTranslation("MAS_INFO"))<i class="go"></i></a>
     </div>
     <div class="col-md-3 product-item">
         <a href="products.html">
-            <img src="/Content/images/shoes.jpg" class="img-responsive zoom-img" alt="" /></a>
-        <h3>
-            Barbacoas</h3>
-        <a href="single.html">Comprar<i class="go"></i></a>
+            <img src="/Content/images/contact.jpg" class="img-responsive zoom-img" alt="" /></a>
+        <h3>@Html.Raw(Model.GetTranslation("CONTACTO"))</h3>
+        <a href="@Html.Raw(Model.GetTranslation("LINK_CONTACTO"))">@Html.Raw(Model.GetTranslation("MAS_INFO"))<i class="go"></i></a>
     </div>
     <div class="clearfix">
     </div>
 </div>
 <div class="best-sellers">
     <div class="best-sellers-head">
-        <h3>
-            Mejoras ventas</h3>
+        <h3>@Html.Raw(Model.GetTranslation("MEJORES_VENTAS"))</h3>
     </div>
     <div class="best-sellers-menu">
         <ul>
@@ -118,7 +111,7 @@
             </li>
             <li>
                 <div class="ipad text-center">
-                    <img src="/Content/images/phone1.jpg" alt="" width="140" height="200" />
+                    <img src="/Content/images/phone1.jpg" alt="" width="200" height="140" />
                     <h4>
                         Ipad Mini</h4>
                     <h3>

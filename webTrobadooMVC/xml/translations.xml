@@ -1,7 +1,23 @@
 ﻿<pages>
+  <page id="header">
+    <language id="es">
+      <literal id="1"><![CDATA[Buscar por producto, categoría...]]></literal>
+      <literal id="2"><![CDATA[Castellano]]></literal>
+      <literal id="3"><![CDATA[Ingles]]></literal>
+      <literal id="4"><![CDATA[/Productos]]></literal>
+    </language>
+    <language id="en">
+      <literal id="1"><![CDATA[Search for product, category...]]></literal>
+      <literal id="2"><![CDATA[Spanish]]></literal>
+      <literal id="3"><![CDATA[English]]></literal>
+      <literal id="4"><![CDATA[/Products]]></literal>
+    </language>
+  </page>
   <page id="navbar">
     <language id="es">
-      <literal id="1"><![CDATA[Concepto]]></literal>
+      <literal id="1">
+        <![CDATA[Concepto]]>
+      </literal>
       <literal id="2"><![CDATA[/Concepto]]></literal>
       <literal id="3"><![CDATA[Servicios]]></literal>
       <literal id="4"><![CDATA[/Servicios]]></literal>
@@ -9,6 +25,7 @@
       <literal id="6"><![CDATA[/Contacto]]></literal>
       <literal id="7"><![CDATA[¡Valoración de artículos gratuita!]]></literal>
       <literal id="8"><![CDATA[/Valoracion]]></literal>
+      <literal id="9"><![CDATA[Categorías]]></literal>
     </language>
     <language id="en">
       <literal id="1"><![CDATA[Store Concept]]></literal>
@@ -19,6 +36,7 @@
       <literal id="6"><![CDATA[/Contact]]></literal>
       <literal id="7"><![CDATA[Free Product Appraisal!]]></literal>
       <literal id="8"><![CDATA[/Valuate]]></literal>
+      <literal id="9"><![CDATA[Categories]]></literal>
     </language>
   </page>
   <page id="home">
@@ -34,6 +52,20 @@
       <literal id="9"><![CDATA[un dinero extra!]]></literal>
       <literal id="10"><![CDATA[TROBADOO vende las cosas que no necesitas y te ofrece la posibilidad de conseguir un dinero extra con el que no contabas.]]></literal>
       <literal id="11"><![CDATA[TROBADOO también tiene artículos nuevos a precios de ocasión, provenientes de restos de stoks, de cierres de tiendas, etc. Trae lo que no necesitas, nosotros lo vendemos al mejor precio. En TROBADOO encontrarás muebles, artículos de menaje para hogar, aparatos electrodomésticos, objetos decorativos, material deportivo, aparatos y accesorios para fotografía, aparatos de imagen y sonido, materiales para bricolaje, artículos de oficina, entre otras muchas cosas.]]></literal>
+      <literal id="OFERTA_SEMANA"><![CDATA[Oferta de la semana]]></literal>
+      <literal id="VER_OFERTA"><![CDATA[Ver oferta]]></literal>
+      <literal id="NOVEDADES"><![CDATA[Novedades]]></literal>
+      <literal id="LINK_NOVEDADES"><![CDATA[/Productos?f=new]]></literal>
+      <literal id="VER_TODO"><![CDATA[Ver todo]]></literal>
+      <literal id="CONCEPTO"><![CDATA[Concepto]]></literal>
+      <literal id="LINK_CONCEPTO"><![CDATA[/Concepto]]></literal>
+      <literal id="SERVICIOS"><![CDATA[Servicios]]></literal>
+      <literal id="LINK_SERVICIOS"><![CDATA[/Servicios]]></literal>
+      <literal id="CONTACTO"><![CDATA[Contacto]]></literal>
+      <literal id="LINK_CONTACTO"><![CDATA[/Contacto]]></literal>
+      <literal id="MAS_INFO"><![CDATA[Mas info]]></literal>
+      <literal id="COMPRAR"><![CDATA[Comprar]]></literal>
+      <literal id="MEJORES_VENTAS"><![CDATA[Mejores ventas]]></literal>
     </language>
     <language id="en">
       <literal id="1"><![CDATA[If you have things that you don't need]]></literal>
@@ -47,6 +79,20 @@
       <literal id="9"><![CDATA[extra money!]]></literal>
       <literal id="10"><![CDATA[TROBADOO sells the things you don't need and offers you the possibility to extra cash for them.]]></literal>
       <literal id="11"><![CDATA[TROBADOO also carries new items, such as rests of stock, store closures, etc. at bargain prices. Bring us the things you don't use anymore and we will sell them at the best prices. In TROBADOO you'll find furniture, all sorts of household items, electronic appliances, decorative objects, sports equipment, photography devices and accessories, audio and video equipment, arts and crafts material, office equipment and much more...]]></literal>
+      <literal id="OFERTA_SEMANA"><![CDATA[Deal of the week]]></literal>
+      <literal id="VER_OFERTA"><![CDATA[See offer]]></literal>
+      <literal id="NOVEDADES"><![CDATA[New arrivals]]></literal>
+      <literal id="LINK_NOVEDADES"><![CDATA[/Product?f=new]]></literal>
+      <literal id="VER_TODO"><![CDATA[See all]]></literal>
+      <literal id="CONCEPTO"><![CDATA[Concept]]></literal>
+      <literal id="LINK_CONCEPTO"><![CDATA[/Concept]]></literal>
+      <literal id="SERVICIOS"><![CDATA[Services]]></literal>
+      <literal id="LINK_SERVICIOS"><![CDATA[/Services]]></literal>
+      <literal id="CONTACTO"><![CDATA[Contact]]></literal>
+      <literal id="LINK_CONTACTO"><![CDATA[/Contact]]></literal>
+      <literal id="MAS_INFO"><![CDATA[More info]]></literal>
+      <literal id="COMPRAR"><![CDATA[Buy]]></literal>
+      <literal id="MEJORES_VENTAS"><![CDATA[Bestsellers]]></literal>
     </language>
   </page>
   <page id="concept">
@@ -213,6 +259,8 @@
       <literal id="68"><![CDATA[Piscina]]></literal>
       <literal id="69"><![CDATA[Decoración]]></literal>
       <literal id="70"><![CDATA[Barbacoas]]></literal>
+      <literal id="LINK_SERVICIOS"><![CDATA[/Servicios]]></literal>
+      <literal id="LINK_CONTACTO"><![CDATA[/Contacto]]></literal>
     </language>
     <language id="en">
       <literal id="1"><![CDATA[Living-Dining room]]></literal>
@@ -285,6 +333,8 @@
       <literal id="68"><![CDATA[Swimming Pool]]></literal>
       <literal id="69"><![CDATA[Decoration]]></literal>
       <literal id="70"><![CDATA[Barbeque]]></literal>
+      <literal id="LINK_SERVICIOS"><![CDATA[/Services]]></literal>
+      <literal id="LINK_CONTACTO"><![CDATA[/Contact]]></literal>
     </language>
   </page>
   <page id="contactForm">

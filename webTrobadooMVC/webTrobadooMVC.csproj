@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +122,8 @@
     <Compile Include="Controllers\Ajax\AjaxSendMailController.cs" />
     <Compile Include="Controllers\ConceptController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\RefreshCacheController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\AjaxBaseResponse.cs" />
@@ -136,11 +139,12 @@
     </Compile>
     <Compile Include="Helpers\CookieManager.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
-    <Compile Include="Helpers\MailHelper.cs" />
-    <Compile Include="Helpers\ResourceManager.cs" />
     <Compile Include="Helpers\TranslationManager.cs" />
     <Compile Include="Helpers\ViewRendererHelper.cs" />
     <Compile Include="Helpers\XmlTranslationsFactory.cs" />
+    <Compile Include="Models\Admin\CacheManager.cs" />
+    <Compile Include="Models\Admin\Cache.cs" />
+    <Compile Include="Models\Admin\RefreshCacheModel.cs" />
     <Compile Include="Models\Carousel\BaseCarouselModel.cs" />
     <Compile Include="Models\Common\NavbarModel.cs" />
     <Compile Include="Models\Common\SeoModel.cs" />
@@ -152,6 +156,11 @@
     <Compile Include="Models\Contact\ValuateContactModel.cs" />
     <Compile Include="Models\Contact\FormContactModel.cs" />
     <Compile Include="Models\Home\PresentationModel.cs" />
+    <Compile Include="Models\Products\Product.cs" />
+    <Compile Include="Models\Products\Products.cs" />
+    <Compile Include="Models\Products\ProductCategories.cs" />
+    <Compile Include="Models\Products\ProductCategory.cs" />
+    <Compile Include="Models\Products\ProductsModel.cs" />
     <Compile Include="Models\Services\ServicesModel.cs" />
     <Compile Include="Models\Home\HomeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,8 +185,16 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\css\trobadoo.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
-    <Content Include="Content\images\loading.gif" />
+    <Content Include="Content\images\common\flag_de.png" />
+    <Content Include="Content\images\common\flag_es.png" />
+    <Content Include="Content\images\common\flag_fr.png" />
+    <Content Include="Content\images\common\flag_uk.png" />
+    <Content Include="Content\images\common\logo.jpg" />
+    <Content Include="Content\images\common\loading.gif" />
+    <Content Include="Content\images\concept.jpg" />
+    <Content Include="Content\images\contact.jpg" />
     <Content Include="Content\images\offers\offer.png" />
+    <Content Include="Content\images\services.jpg" />
     <Content Include="Content\images\slider\slider1.jpg" />
     <Content Include="Content\images\slider\slider10.jpg" />
     <Content Include="Content\images\slider\slider11.jpg" />
@@ -202,7 +219,9 @@
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\home.js" />
     <Content Include="Content\js\megamenu.js" />
+    <Content Include="Content\js\products.js" />
     <Content Include="Content\js\responsiveslides.min.js" />
+    <Content Include="Content\js\trobadoo.js" />
     <Content Include="ExternalLib\SEOLibrary.dll" />
     <Content Include="Global.asax" />
     <EmbeddedResource Include="Templates\valuateMailTemplate.htm" />
@@ -211,6 +230,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Shared\PartialViews\Common\NavBar.cshtml" />
+    <Content Include="Views\Products\Products.cshtml" />
+    <Content Include="Views\Admin\RefreshCache.cshtml" />
     <None Include="Web.config.new">
       <SubType>Designer</SubType>
     </None>
