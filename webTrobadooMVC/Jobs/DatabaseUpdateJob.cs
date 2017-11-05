@@ -9,11 +9,15 @@ using System.Configuration;
 using com.trobadoo.utils.Helpers;
 using System.Text;
 using System.IO;
+using com.trobadoo.utils.Helpers.db;
+using trobadoo.com.utils.Helpers.db;
 
 namespace trobadoo.com.web.Jobs
 {
     public class DatabaseUpdateJob : IJob
     {
+        private static string UPDATE_PRODUCTS = "WEB_UPDATE_PRODUCTS";
+
         public void Execute(IJobExecutionContext context)
         {
             StringBuilder strBuilder = new StringBuilder();
@@ -68,7 +72,14 @@ namespace trobadoo.com.web.Jobs
         private bool updateDatabase(string file)
         {
             //TODO Implementar
+            DatabaseHelper dbHelper = new DatabaseHelper();
+            dbHelper.call(UPDATE_PRODUCTS, getParams(), true, true);
             return false;
+        }
+
+        private SqlParametersList getParams()
+        {
+            throw new NotImplementedException();
         }
 
     }
