@@ -64,7 +64,7 @@ namespace trobadoo.com.web.Controllers.Ajax
                     case "sendValuateMail":
                         var photoToken = Request["photoToken"];
                         var path = Path.Combine(Server.MapPath("/uploadImages"),photoToken);
-                        var photos = FileHelper.GetUploadedFiles(path);
+                        var photos = MailHelper.GetUploadedFiles(path);
                         result = SendValuateMail(Request, photos);
                         if (result)
                         {
@@ -103,7 +103,7 @@ namespace trobadoo.com.web.Controllers.Ajax
 
         private bool SendContactMail(HttpRequestBase request)
         {
-            var mailTemplate = FileHelper.GetEmbeddedResourceText("trobadoo.com.web.Templates.mailTemplate.htm", Assembly.GetExecutingAssembly());
+            var mailTemplate = MailHelper.GetEmbeddedResourceText("trobadoo.com.web.Templates.mailTemplate.htm", Assembly.GetExecutingAssembly());
             //var mailContent = new System.Text.StringBuilder();
             var subject = "Formulario Contacto - Trobadoo.com";
 
@@ -125,7 +125,7 @@ namespace trobadoo.com.web.Controllers.Ajax
             {
                 //var mailSender = new Toolfactory.Mail.MailSender(ConfigurationManager.AppSettings["mailServer"], ConfigurationManager.AppSettings["mailNoReplyUser"], ConfigurationManager.AppSettings["mailNoReplyPassword"]);
                 //mailSender.Send(ConfigurationManager.AppSettings["mailNoreply"], ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate.ToString(), string.Empty, string.Empty, string.Empty, true);
-                return FileHelper.SendMail(ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate, string.Empty);
+                return MailHelper.SendMail(ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate, string.Empty);
             }
             catch (Exception ex)
             {
@@ -136,7 +136,7 @@ namespace trobadoo.com.web.Controllers.Ajax
 
         private bool SendValuateMail(HttpRequestBase request, List<Photo> photos)
         {
-            var mailTemplate = FileHelper.GetEmbeddedResourceText("trobadoo.com.web.Templates.valuateMailTemplate.htm", Assembly.GetExecutingAssembly());
+            var mailTemplate = MailHelper.GetEmbeddedResourceText("trobadoo.com.web.Templates.valuateMailTemplate.htm", Assembly.GetExecutingAssembly());
             //var mailContent = new System.Text.StringBuilder();
             var subject = "Formulario Valoracion Gratuita - Trobadoo.com";
 
@@ -177,7 +177,7 @@ namespace trobadoo.com.web.Controllers.Ajax
             }
             try
             {
-                return FileHelper.SendMail(ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate, attachs);
+                return MailHelper.SendMail(ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate, attachs);
                 //var mailSender = new Toolfactory.Mail.MailSender(ConfigurationManager.AppSettings["mailServer"], ConfigurationManager.AppSettings["mailNoReplyUser"], ConfigurationManager.AppSettings["mailNoReplyPassword"]);
                 //mailSender.Send(ConfigurationManager.AppSettings["mailNoreply"], ConfigurationManager.AppSettings["mailInfo"] + ";david.artieri@gmail.com", subject, mailTemplate.ToString(), string.Empty, string.Empty, attachs, true);
             }

@@ -29,7 +29,8 @@ namespace TrobadooWebUpdater
 
         static void Main(string[] args)
         {
-            test();
+            //test();
+            execute();
         }
 
         static void test()
@@ -58,6 +59,10 @@ namespace TrobadooWebUpdater
             //Genera el fichero xml de productos en local
             appendMessage("Generamos el fichero xml de productos en local");
             DateTime now = DateTime.Now;
+            if (!Directory.Exists(xmlPath))
+            {
+                Directory.CreateDirectory(xmlPath);
+            } 
             string fileName = xmlPath + "products_" + now.ToString("yyyy-MM-dd_HHmm") + ".xml";
             DatabaseHelper dbHelper = new DatabaseHelper();
             XDocument xml = dbHelper.getXml(GET_PRODUCTS, null, false);
@@ -67,6 +72,7 @@ namespace TrobadooWebUpdater
                 appendMessage("Guardamos el fichero " + fileName);
                 xml.Save(fileName);
 
+ #if !DEBUG
                 //Sube el fichero xml al FTP de Trobadoo
                 appendMessage("Subimos el fichero xml al FTP de Trobadoo");
                 FtpHelper ftpHelper = new FtpHelper(ftpUrl, ftpUser, ftpPassword);
@@ -111,7 +117,8 @@ namespace TrobadooWebUpdater
                     appendMessage(errorMessage);
                     MailHelper.SendMail(fromAddress, toAddress, "Error subiendo fichero de productos al FTP", errorMessage, true, null);
                 }
-                toFile();
+#endif
+                LogHelper.toFile(@"logs", strBuilder.ToString());
             }
         }
 
@@ -167,19 +174,6 @@ namespace TrobadooWebUpdater
         private static void appendMessage(string message)
         {
             strBuilder.AppendLine(DateTime.Now + " - " + message);
-        }
-
-        private static void toFile()
-        {
-            if (!Directory.Exists(@"logs"))
-            {
-                Directory.CreateDirectory(@"logs");
-            }
-            using (System.IO.StreamWriter file =
-            new System.IO.StreamWriter(@"logs\console.log", true))
-            {
-                file.WriteLine(strBuilder.ToString());
-            }
         }
     }
 }

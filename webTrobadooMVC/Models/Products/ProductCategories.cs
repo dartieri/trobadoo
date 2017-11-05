@@ -9,7 +9,6 @@ using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Data;
 using trobadoo.com.web.Helpers;
-using trobadoo.com.web.Helpers.db;
 
 namespace trobadoo.com.web.Models.Products
 {
@@ -28,9 +27,9 @@ namespace trobadoo.com.web.Models.Products
 
         private static List<ProductCategory> getProductCategories()
         {
-            //var productCategories = new List<ProductCategory>();
-            var productCategories = loadFromDatabase();
-            /*Random random = new Random(100);
+            var productCategories = new List<ProductCategory>();
+            //var productCategories = loadFromDatabase();
+            Random random = new Random(100);
             for (int i = 1; i < 10; i++)
             {
                 ProductCategory productCategory = new ProductCategory(i.ToString(), "Category" + i, random.Next());
@@ -39,11 +38,11 @@ namespace trobadoo.com.web.Models.Products
                     productCategory.addSubCategory(new ProductCategory((i + 100).ToString(), "SubCategory" + i + 100, random.Next()));
                 }
                 productCategories.Add(productCategory);
-            }*/
+            }
             return productCategories;
         }
 
-        private static List<ProductCategory> loadFromDatabase()
+        /*private static List<ProductCategory> loadFromDatabase()
         {
             var dbHelper = new DatabaseHelper();
             List<ProductCategory> productCategories = new List<ProductCategory>();
@@ -57,7 +56,7 @@ namespace trobadoo.com.web.Models.Products
                 }
             }
             return productCategories;
-        }
+        }*/
 
         internal static List<ProductCategory> get()
         {

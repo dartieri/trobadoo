@@ -9,7 +9,6 @@ using System.Diagnostics;
 using System.Data.SqlClient;
 using System.Data;
 using trobadoo.com.web.Helpers;
-using trobadoo.com.web.Helpers.db;
 
 namespace trobadoo.com.web.Models.Products
 {
@@ -42,7 +41,7 @@ namespace trobadoo.com.web.Models.Products
             return products;
         }
 
-        private static List<Product> loadFromDatabase(SqlParametersList parameters)
+        /*private static List<Product> loadFromDatabase(SqlParametersList parameters)
         {
             var dbHelper = new DatabaseHelper();
             List<Product> products = new List<Product>();
@@ -65,7 +64,7 @@ namespace trobadoo.com.web.Models.Products
                 }
             }
             return products;
-        }
+        }*/
 
         internal static List<Product> get()
         {

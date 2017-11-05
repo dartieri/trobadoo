@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace trobadoo.com.web.Helpers
 {
-    public class FileHelper
+    public class MailHelper
     {
         private static string _server = ConfigurationManager.AppSettings["mailServer"];
         private static int _port = int.Parse(ConfigurationManager.AppSettings["mailServerPort"]);

@@ -10,7 +10,7 @@ namespace com.trobadoo.utils.Helpers
     public class FileHelper
     {
         private string dirPath;
-        private List<string> validExtensions = new List<string> { ".jpg", ".png" };
+        private List<string> validExtensions = new List<string> { ".jpg", ".png", ".xml" };
 
         public FileHelper(string dirPath)
         {
@@ -82,6 +82,20 @@ namespace com.trobadoo.utils.Helpers
             {
                 return validExtensions;
             }
+        }
+
+        public string deleteFile(string filePath)
+        {
+            try
+            {
+                FileInfo file = new FileInfo(filePath);
+                file.Delete();
+            }
+            catch (IOException e)
+            {
+                return string.Format("Error: {0}. Stack: {1}", e.Message, e.StackTrace);
+            }
+            return null;
         }
     }
 }

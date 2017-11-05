@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 using trobadoo.com.web.Helpers;
+using trobadoo.com.web.Jobs;
 
 namespace webTrobadooMVC
 {
@@ -22,6 +23,8 @@ namespace webTrobadooMVC
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             TranslationManager.LoadTranslations();
+
+            JobsManager.initJobs();
         }
 
         private bool ExecutionMode()
@@ -80,16 +83,16 @@ namespace webTrobadooMVC
                 {
                     if (strCodigo != null && strCodigo == "TROB00")
                     {
-                        FileHelper.SendMail(strMails, "Web Trobadoo", "Trobadoo.com - Mensaje de la aplicacion", strCodigo + " - " + DateTime.Now);
+                        MailHelper.SendMail(strMails, "Web Trobadoo", "Trobadoo.com - Mensaje de la aplicacion", strCodigo + " - " + DateTime.Now);
                     }
                     else
                     {
-                        FileHelper.SendMail(strMails, "Web Trobadoo", "Trobadoo.com - Error de la aplicacion", strCodigo + " - " + Request.ServerVariables["HTTP_HOST"] + " - " + Request.ServerVariables["LOCAL_ADDR"] + " - " + Request.Path + " - " + DateTime.Now);
+                        MailHelper.SendMail(strMails, "Web Trobadoo", "Trobadoo.com - Error de la aplicacion", strCodigo + " - " + Request.ServerVariables["HTTP_HOST"] + " - " + Request.ServerVariables["LOCAL_ADDR"] + " - " + Request.Path + " - " + DateTime.Now);
                     }
                 }
                 catch (Exception ex)
                 {
-                    FileHelper.SendMail("david.artieri@gmail.com", "Web Trobadoo", "Trobadoo.com - Error de la aplicacion", strCodigo + " - " + ex.Message + " - " + DateTime.Now);
+                    MailHelper.SendMail("david.artieri@gmail.com", "Web Trobadoo", "Trobadoo.com - Error de la aplicacion", strCodigo + " - " + ex.Message + " - " + DateTime.Now);
                 }
             }
         }
