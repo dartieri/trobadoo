@@ -92,7 +92,7 @@ namespace com.trobadoo.utils.Helpers.db
             {
                 throw new Exception("Parameter bdDatabaseWriteWeb not defined");
             }
-            databaseWriteWeb = System.Configuration.ConfigurationManager.AppSettings["bdDatabaseWrite"];
+            databaseWriteWeb = System.Configuration.ConfigurationManager.AppSettings["bdDatabaseWriteWeb"];
 
             inicializa(serverReadTrobadoo, databaseReadTrobadoo, userReadTrobadoo, bdPasswordReadTrobadoo, serverReadWeb, databaseReadWeb, userReadWeb, bdPasswordReadWeb, serverWriteWeb, databaseWriteWeb, userWriteWeb, bdPasswordWriteWeb);
         }
