@@ -6,3 +6,7 @@
 /TrobadooUtils/obj/
 /TrobadooWebUpdater/bin/
 /TrobadooWebUpdater/obj/
+App.config
+Web.config
+Web.Debug.config
+Web.Release.config
